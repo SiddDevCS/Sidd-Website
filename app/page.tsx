@@ -45,7 +45,7 @@ export default function Home() {
 
         <div className="mt-8 flex justify-center space-x-4">
           <a
-            href="https://github.com/Siddharth11sehgal"
+            href="https://github.com/SiddDevCS"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-sm font-medium text-[#80d0c7] py-2 px-6 border border-[#80d0c7] rounded-full hover:bg-[#80d0c7] hover:text-black transition-all"
