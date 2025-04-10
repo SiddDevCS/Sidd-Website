@@ -1,9 +1,12 @@
+/* globals.css */
 @import "tailwindcss";
 
-@import "base";
-@import "components";
-@import "utilities";
+/* Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Custom animations */
 @layer utilities {
   .animate-shake {
     animation: shake 0.4s ease-in-out;
