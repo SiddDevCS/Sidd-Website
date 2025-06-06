@@ -6,6 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-black text-neutral-200;
+  }
+}
+
 /* Custom animations */
 @layer utilities {
   .animate-shake {
@@ -33,4 +39,76 @@
       transform: translateY(0);
     }
   }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  }
+
+  .animate-gradient {
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .glass-dark {
+    @apply bg-neutral-900/50 backdrop-blur-xl border border-neutral-800/50;
+  }
+
+  .glass-card {
+    @apply bg-neutral-900/30 backdrop-blur-xl border border-neutral-800/50 hover:border-neutral-700/50 transition-all duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-neutral-200 via-neutral-400 to-neutral-300 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-blue-400 via-cyan-400 to-neutral-200 bg-clip-text text-transparent;
+  }
 }
+
+@keyframes gradientBG {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px -10px rgba(66, 153, 225, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px -10px rgba(49, 130, 206, 0.8);
+  }
+}
+
+/* Stagger children animations */
+.stagger-animation > * {
+  opacity: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
