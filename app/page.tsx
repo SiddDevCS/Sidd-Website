@@ -1,16 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import clsx from "clsx";
 
 export default function Home() {
-  const [animateKey, setAnimateKey] = useState(0);
-
-  const handleClick = () => {
-    setAnimateKey(prev => prev + 1);
-  };
-
   return (
     <section className="w-full max-w-xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp">
       {/* Main Content Card */}
@@ -40,7 +32,7 @@ export default function Home() {
 
         {/* About/Intro */}
         <p className="text-base text-neutral-400 text-center mb-10 max-w-md animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-          I enjoy exploring new programming languages, tools, and frameworks—constantly learning by building, testing, and breaking things. Whether it's developing apps, solving CTFs, or experimenting with tech stacks, I'm always up for a challenge.
+          I&apos;m particularly focused on building practical applications that solve real-world problems, as demonstrated by my projects like TripCraft and StudieBuddie.
         </p>
 
         <div className="w-16 h-px bg-gradient-to-r from-transparent via-neutral-700 to-transparent mb-10"></div>

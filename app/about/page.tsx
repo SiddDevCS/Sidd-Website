@@ -8,9 +8,9 @@ export default function About() {
         
         {/* Introduction */}
         <div className="glass-card rounded-xl p-6 mb-8 hover:border-blue-500/20 transition-colors">
-          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Hey, I'm Sidd!</h2>
+          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Hey, I&apos;m Sidd!</h2>
           <p className="text-neutral-400 leading-relaxed">
-            I'm a 16-year-old developer who's really into tech, creativity, and figuring out how things work. 
+            I&apos;m a 16-year-old developer who&apos;s really into tech, creativity, and figuring out how things work. 
             What started as a curiosity for the behind-the-scenes of apps and websites has grown into a real 
             passion for building useful tools—and keeping them secure.
           </p>
@@ -21,13 +21,13 @@ export default function About() {
           <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Tech & Development</h2>
           <div className="space-y-4 text-neutral-400 leading-relaxed">
             <p>
-              I love experimenting with new tech—whether that's diving into a new programming language, 
-              building apps, or just tinkering with different tools to see what I can create. I've built 
+              I love experimenting with new tech—whether that&apos;s diving into a new programming language, 
+              building apps, or just tinkering with different tools to see what I can create. I&apos;ve built 
               a few apps like TripCraft and StudieBuddie, which are focused on solving real problems in 
               simple ways.
             </p>
             <p>
-              Cybersecurity is another space I'm really into. I regularly do CTFs (Capture the Flag challenges), 
+              Cybersecurity is another space I&apos;m really into. I regularly do CTFs (Capture the Flag challenges), 
               learn about different types of vulnerabilities, and try to understand how systems can be broken—and 
               more importantly, how to protect them.
             </p>
@@ -52,7 +52,7 @@ export default function About() {
               <span className="text-blue-400 mt-1">→</span>
               <span className="leading-relaxed">
                 <span className="text-blue-400/90 font-medium">Music Production</span> – I use Logic Pro to make 
-                beats and experiment with sounds. It's my creative outlet and a fun way to switch things up from coding.
+                beats and experiment with sounds. It&apos;s my creative outlet and a fun way to switch things up from coding.
               </span>
             </li>
           </ul>
@@ -62,7 +62,7 @@ export default function About() {
         <div className="glass-card rounded-xl p-6 hover:border-blue-500/20 transition-colors">
           <h2 className="text-xl font-semibold mb-4 text-gradient-blue">How I Work</h2>
           <p className="text-neutral-400 leading-relaxed">
-            I'm a big believer in learning by doing. Whether I'm working on an app, solving a CTF, editing 
+            I&apos;m a big believer in learning by doing. Whether I&apos;m working on an app, solving a CTF, editing 
             a photo, or building a beat, I like to just jump in, try things out, and figure stuff out along 
             the way. That mix of tech and creativity helps me think differently and come up with ideas that 
             feel both practical and personal.
