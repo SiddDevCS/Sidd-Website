@@ -172,8 +172,12 @@ export default function Home() {
             </div>
 
             <div className="glass-card rounded-xl p-6 space-y-2 hover:border-blue-500/20 transition-colors md:col-span-2">
-              <h3 className="text-lg font-semibold text-blue-400 mb-3">Programming Languages</h3>
+              <h3 className="text-lg font-semibold text-blue-400 mb-3">Development Tools</h3>
               <ul className="space-y-2 text-sm">
+                <li className="flex items-center space-x-2">
+                  <span className="text-blue-400/80">•</span>
+                  <span>Git (Version Control)</span>
+                </li>
                 <li className="flex items-center space-x-2">
                   <span className="text-blue-400/80">•</span>
                   <span>Python (Scripting)</span>
