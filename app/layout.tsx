@@ -38,6 +38,19 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png" },
+    ],
+  },
+  manifest: "/manifest.json",
   metadataBase: new URL('https://siddsehgal.com'),
   openGraph: {
     title: "Sidd Sehgal | Portfolio",
