@@ -1,4 +1,14 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact | Sidd Sehgal',
+  description: 'Get in touch with Sidd Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
+  openGraph: {
+    title: 'Contact | Sidd Sehgal',
+    description: 'Get in touch with Sidd Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
+  },
+};
 
 export default function Contact() {
   return (

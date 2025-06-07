@@ -1,4 +1,14 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Experience | Sidd Sehgal',
+  description: 'Explore my experience in software development, mobile app creation, and cybersecurity projects. View my technical skills and achievements.',
+  openGraph: {
+    title: 'Experience | Sidd Sehgal',
+    description: 'Explore my experience in software development, mobile app creation, and cybersecurity projects. View my technical skills and achievements.',
+  },
+};
 
 export default function Experience() {
   return (

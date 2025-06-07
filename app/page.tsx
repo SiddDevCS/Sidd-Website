@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -26,17 +27,49 @@ export default function Home() {
         <h1 className="text-4xl font-bold mt-8 mb-2 text-center text-gradient animate-fadeInUp">
           Sidd Sehgal
         </h1>
+
         <p className="text-lg text-neutral-400 mb-6 text-center animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-          16-year-old developer passionate about cybersecurity & software development
+          Hi! I&apos;m Sidd. I love developing mobile apps and web-based applications, and I&apos;m passionate about cybersecurity.
         </p>
 
-        {/* About/Intro */}
+        {/* Social Media Links */}
+        <div className="flex space-x-6 mb-10 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+          <a
+            href="https://www.linkedin.com/in/siddsehgal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
+            aria-label="LinkedIn Profile"
+          >
+            <FaLinkedin size={28} />
+          </a>
+          <a
+            href="https://github.com/SiddDevCS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
+            aria-label="GitHub Profile"
+          >
+            <FaGithub size={28} />
+          </a>
+          <a
+            href="https://www.youtube.com/@SiddDevTech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
+            aria-label="YouTube Channel"
+          >
+            <FaYoutube size={28} />
+          </a>
+        </div>
+
+        {/* About/Intro
         <p className="text-base text-neutral-400 text-center mb-10 max-w-md animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-          I&apos;m particularly focused on building practical applications that solve real-world problems, as demonstrated by my projects like TripCraft and StudieBuddie.
+          I&apos;m particularly focused on building practical applications/tools that solve real-world problems.
         </p>
 
         <div className="w-16 h-px bg-gradient-to-r from-transparent via-neutral-700 to-transparent mb-10"></div>
-
+        */}
         {/* Projects Section */}
         <div className="w-full stagger-animation">
           <h2 className="text-xl font-semibold mb-3 text-center text-gradient-blue">Featured Projects</h2>
@@ -140,13 +173,13 @@ export default function Home() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <span className="text-blue-400/80">•</span>
-                  <span>PostgreSQL</span>
+                  <span>PostgreSQL (Supabase)</span>
                 </li>
               </ul>
             </div>
 
             <div className="glass-card rounded-xl p-6 space-y-2 hover:border-blue-500/20 transition-colors">
-              <h3 className="text-lg font-semibold text-blue-400 mb-3">Mobile & Game Dev</h3>
+              <h3 className="text-lg font-semibold text-blue-400 mb-3">Mobile Development</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <span className="text-blue-400/80">•</span>
@@ -156,15 +189,11 @@ export default function Home() {
                   <span className="text-blue-400/80">•</span>
                   <span>Expo Framework</span>
                 </li>
-                <li className="flex items-center space-x-2">
-                  <span className="text-blue-400/80">•</span>
-                  <span>C# (Unity)</span>
-                </li>
               </ul>
             </div>
 
-            <div className="glass-card rounded-xl p-6 space-y-2 hover:border-blue-500/20 transition-colors md:col-span-2">
-              <h3 className="text-lg font-semibold text-blue-400 mb-3">Development Tools</h3>
+            <div className="glass-card rounded-xl p-6 space-y-2 hover:border-blue-500/20 transition-colors md:col-span-2 flex flex-col items-center text-center">
+              <h3 className="text-lg font-semibold text-blue-400 mb-3">Development Tools/Other</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <span className="text-blue-400/80">•</span>
@@ -176,11 +205,15 @@ export default function Home() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <span className="text-blue-400/80">•</span>
-                  <span>TypeScript</span>
+                  <span>Docker</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <span className="text-blue-400/80">•</span>
-                  <span>JavaScript</span>
+                  <span>Kali Linux</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-blue-400/80">•</span>
+                  <span>Unity Game Engine (C#)</span>
                 </li>
               </ul>
             </div>

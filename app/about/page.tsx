@@ -1,4 +1,14 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Me | Sidd Sehgal',
+  description: 'Learn about Sidd Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
+  openGraph: {
+    title: 'About Me | Sidd Sehgal',
+    description: 'Learn about Sidd Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
+  },
+};
 
 export default function About() {
   return (
@@ -10,9 +20,9 @@ export default function About() {
         <div className="glass-card rounded-xl p-6 mb-8 hover:border-blue-500/20 transition-colors">
           <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Hey, I&apos;m Sidd!</h2>
           <p className="text-neutral-400 leading-relaxed">
-            I&apos;m a 16-year-old developer who&apos;s really into tech, creativity, and figuring out how things work. 
-            What started as a curiosity for the behind-the-scenes of apps and websites has grown into a real 
-            passion for building useful tools—and keeping them secure.
+            I&apos;m really into tech, creativity, and figuring out how things work. 
+            I remember making my first game with Unity Game Engine in 2024, and I&apos;ve been hooked to developing ever since.
+            In 2025, I discovered the world of mobile app development and I&apos;ve been building apps ever since.
           </p>
         </div>
 
@@ -21,14 +31,14 @@ export default function About() {
           <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Tech & Development</h2>
           <div className="space-y-4 text-neutral-400 leading-relaxed">
             <p>
-              I love experimenting with new tech—whether that&apos;s diving into a new programming language, 
-              building apps, or just tinkering with different tools to see what I can create. I&apos;ve built 
+              I love experimenting with new tech, whether that&apos;s diving into a new programming language, 
+              building apps, or just playing around with different tools to see what I can create. I&apos;ve built 
               a few apps like TripCraft and StudieBuddie, which are focused on solving real problems in 
               simple ways.
-            </p>
-            <p>
-              Cybersecurity is another space I&apos;m really into. I regularly do CTFs (Capture the Flag challenges), 
-              learn about different types of vulnerabilities, and try to understand how systems can be broken—and 
+              <br />
+              <br />
+              I&apos;m also really into cybersecurity, and I regularly do CTFs (Capture the Flag challenges), 
+              learn about different types of vulnerabilities, and try to understand how systems can be broken. And 
               more importantly, how to protect them.
             </p>
           </div>
@@ -58,7 +68,7 @@ export default function About() {
           </ul>
         </div>
 
-        {/* How I Work */}
+        {/* How I Work (not neccesary)
         <div className="glass-card rounded-xl p-6 hover:border-blue-500/20 transition-colors">
           <h2 className="text-xl font-semibold mb-4 text-gradient-blue">How I Work</h2>
           <p className="text-neutral-400 leading-relaxed">
@@ -68,6 +78,7 @@ export default function About() {
             feel both practical and personal.
           </p>
         </div>
+        */}
       </div>
     </section>
   );

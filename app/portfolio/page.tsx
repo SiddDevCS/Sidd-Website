@@ -1,4 +1,14 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Portfolio | Sidd Sehgal',
+  description: 'View my portfolio of projects including TripCraft, StudieBuddie, and other innovative applications. Featuring mobile apps, web development, and AI integration.',
+  openGraph: {
+    title: 'Portfolio | Sidd Sehgal',
+    description: 'View my portfolio of projects including TripCraft, StudieBuddie, and other innovative applications. Featuring mobile apps, web development, and AI integration.',
+  },
+};
 
 export default function Portfolio() {
   return (
