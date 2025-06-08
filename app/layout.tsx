@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
@@ -39,16 +40,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png" },
-    ],
+    icon: "/favicon.png",
+    apple: "/favicon.png"
   },
   manifest: "/manifest.json",
   metadataBase: new URL('https://siddsehgal.com'),
@@ -117,6 +110,7 @@ export default function RootLayout({
         <main className="flex flex-col items-center justify-center min-h-screen w-full px-4 py-8">
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );
