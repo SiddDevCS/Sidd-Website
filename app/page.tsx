@@ -189,6 +189,10 @@ export default function Home() {
                   <span className="text-blue-400/80">•</span>
                   <span>Expo Framework</span>
                 </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-blue-400/80">•</span>
+                  <span>React Native</span>
+                </li>
               </ul>
             </div>
 
