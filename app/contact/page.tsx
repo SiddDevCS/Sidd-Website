@@ -13,47 +13,60 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <section className="w-full max-w-3xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp">
-      <div className="w-full glass-dark rounded-3xl shadow-2xl p-8 md:p-12">
-        <h1 className="text-4xl font-bold mb-6 text-center text-gradient">Contact</h1>
-        <div className="glass-card rounded-xl p-6 text-center">
-          <p className="text-neutral-400 text-lg">
-            You can contact me at: siddnative@gmail.com<br></br>
-            Or  just give me a DM on linkedin!
+    <section className="w-full max-w-3xl mx-auto px-6 pt-20 pb-24 animate-fadeInUp">
+      <div className="w-full bg-zinc-900/50 border border-zinc-700 backdrop-blur-md rounded-3xl shadow-2xl p-8 md:p-12">
+        <h1 className="text-5xl font-extrabold mb-6 text-center text-gradient bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+          Contact Me
+        </h1>
+
+        <p className="text-neutral-300 text-lg text-center mb-6">
+          Interested in working together or just want to say hi?
+        </p>
+
+        <div className="bg-zinc-800/50 rounded-xl p-6 text-center border border-zinc-700">
+          <p className="text-neutral-400 text-md leading-relaxed">
+            Email me at <br />
+            <a
+              href="mailto:siddnative@gmail.com"
+              className="text-blue-400 hover:underline break-all"
+            >
+              siddnative@gmail.com
+            </a>
+            <br /><br />
+            Or drop a DM on LinkedIn!
           </p>
         </div>
-      </div>
 
-      {/* Social Media Links */}
-      <div className="flex space-x-6 mb-10 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-        <a
-          href="https://www.linkedin.com/in/siddsehgal/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
-          aria-label="LinkedIn Profile"
-        >
-        <FaLinkedin size={28} />
+        <div className="flex justify-center space-x-6 mt-10 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+          <a
+            href="https://www.linkedin.com/in/siddsehgal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-400 hover:text-blue-400 transition-transform duration-300 hover:scale-110"
+            aria-label="LinkedIn Profile"
+          >
+            <FaLinkedin size={30} />
           </a>
           <a
             href="https://github.com/SiddDevCS"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
+            className="text-neutral-400 hover:text-white transition-transform duration-300 hover:scale-110"
             aria-label="GitHub Profile"
           >
-            <FaGithub size={28} />
+            <FaGithub size={30} />
           </a>
           <a
             href="https://www.youtube.com/@SiddDevTech"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
+            className="text-neutral-400 hover:text-red-500 transition-transform duration-300 hover:scale-110"
             aria-label="YouTube Channel"
           >
-            <FaYoutube size={28} />
+            <FaYoutube size={30} />
           </a>
         </div>
+      </div>
     </section>
   );
-} 
+}
