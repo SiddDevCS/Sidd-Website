@@ -72,6 +72,10 @@
   .text-gradient-blue {
     @apply bg-gradient-to-r from-blue-400 via-cyan-400 to-neutral-200 bg-clip-text text-transparent;
   }
+
+  .text-gradient-green {
+    @apply bg-gradient-to-r from-green-400 via-emerald-400 to-neutral-200 bg-clip-text text-transparent;
+  }
 }
 
 @keyframes gradientBG {

@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: "About", path: "/about" },
     { name: "Experience", path: "/experience" },
     { name: "Portfolio", path: "/portfolio" },
+    { name: "Write-ups", path: "/writeups" },
     { name: "Contact", path: "/contact" },
   ];
 
