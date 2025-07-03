@@ -12,7 +12,7 @@
   }
 }
 
-/* Custom animations */
+/* Custom animations - Optimized for performance */
 @layer utilities {
   .animate-shake {
     animation: shake 0.4s ease-in-out;
@@ -41,28 +41,31 @@
   }
 
   .animate-fadeInUp {
-    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: fadeInUp 0.6s ease-out both;
   }
 
+  /* Removed heavy gradient animation for better performance */
   .animate-gradient {
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease-in-out infinite;
+    background-size: 200% 200%;
+    animation: gradientBG 8s ease-in-out infinite;
   }
 
+  /* Lighter float animation */
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
   }
 
+  /* Simplified glow effect */
   .animate-glow {
     animation: glow 2s ease-in-out infinite alternate;
   }
 
   .glass-dark {
-    @apply bg-neutral-900/50 backdrop-blur-xl border border-neutral-800/50;
+    @apply bg-neutral-900/50 backdrop-blur-sm border border-neutral-800/50;
   }
 
   .glass-card {
-    @apply bg-neutral-900/30 backdrop-blur-xl border border-neutral-800/50 hover:border-neutral-700/50 transition-all duration-300;
+    @apply bg-neutral-900/30 backdrop-blur-sm border border-neutral-800/50 hover:border-neutral-700/50 transition-all duration-200;
   }
 
   .text-gradient {
@@ -76,8 +79,23 @@
   .text-gradient-green {
     @apply bg-gradient-to-r from-green-400 via-emerald-400 to-neutral-200 bg-clip-text text-transparent;
   }
+
+  /* Navbar indicator animation */
+  .navbar-indicator {
+    animation: slideIn 0.3s ease-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
 }
 
+/* Optimized keyframes */
 @keyframes gradientBG {
   0%, 100% {
     background-position: 0% 50%;
@@ -92,27 +110,32 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
 }
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 20px -10px rgba(66, 153, 225, 0.5);
+    box-shadow: 0 0 15px -8px rgba(66, 153, 225, 0.4);
   }
   to {
-    box-shadow: 0 0 20px -10px rgba(49, 130, 206, 0.8);
+    box-shadow: 0 0 15px -8px rgba(49, 130, 206, 0.6);
   }
 }
 
-/* Stagger children animations */
+/* Optimized stagger animations - reduced complexity */
 .stagger-animation > * {
   opacity: 0;
-  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
-.stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
-.stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
-.stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
-.stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-animation > *:nth-child(2) { animation-delay: 0.15s; }
+.stagger-animation > *:nth-child(3) { animation-delay: 0.2s; }
+.stagger-animation > *:nth-child(4) { animation-delay: 0.25s; }
+.stagger-animation > *:nth-child(5) { animation-delay: 0.3s; }
+
+/* Animation delay utilities */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }

@@ -28,12 +28,12 @@ export default function Home() {
           Sidd Sehgal
         </h1>
 
-        <p className="text-lg text-neutral-400 mb-6 text-center animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+        <p className="text-lg text-neutral-400 mb-6 text-center animate-fadeInUp delay-100">
           Hi! I&apos;m Sidd. I love developing mobile apps and web-based applications, and I&apos;m passionate about cybersecurity.
         </p>
 
         {/* Social Media Links */}
-        <div className="flex space-x-6 mb-10 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+        <div className="flex space-x-6 mb-10 animate-fadeInUp delay-200">
           <a
             href="https://www.linkedin.com/in/siddsehgal/"
             target="_blank"

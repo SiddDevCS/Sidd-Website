@@ -95,13 +95,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-neutral-200 relative overflow-x-hidden selection:bg-blue-900/30 selection:text-blue-200`}>
-        {/* Animated Background Effects */}
+        {/* Optimized Static Background */}
         <div aria-hidden="true" className="fixed inset-0 -z-10">
-          {/* Main gradient */}
-          <div className="absolute inset-0 animate-gradient bg-gradient-to-br from-black via-neutral-900 to-neutral-950 opacity-90" />
-          {/* Accent gradients */}
-          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-blue-950/20 to-transparent opacity-50 blur-3xl" />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-900/30 to-transparent opacity-70 blur-2xl" />
+          {/* Single static gradient background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black via-neutral-900 to-neutral-950" />
+          {/* Subtle accent without heavy animations */}
+          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-blue-950/10 to-transparent opacity-60" />
         </div>
 
         <Navbar />
