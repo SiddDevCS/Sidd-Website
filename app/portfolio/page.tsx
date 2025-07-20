@@ -1,6 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
 
+export const revalidate = 3600; // Revalidate every hour
+
 export const metadata: Metadata = {
   title: 'Portfolio | Sidd Sehgal',
   description:
@@ -22,7 +24,7 @@ export default function Portfolio() {
             Want to see what I’ve built? Check out my full portfolio PDF!
           </p>
           <a
-            href="/Portfolio1.pdf"
+            href="/documents/Portfolio1.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View Sidd Sehgal's Portfolio PDF"

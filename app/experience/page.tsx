@@ -48,7 +48,7 @@ export default function Experience() {
               {/* Recommendation Letter */}
               <div className="mb-6">
                 <a 
-                  href="/Recommendation_Letter_Sidd.pdf" 
+                  href="/documents/Recommendation_Letter_Sidd.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-blue-500/10 text-blue-400 rounded-lg border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/30 transition-all duration-300 group"
@@ -82,11 +82,12 @@ export default function Experience() {
                     <div className="flex items-center space-x-3">
                       <div className="w-12 h-12 rounded-lg overflow-hidden bg-white/10 flex items-center justify-center p-1">
                         <Image 
-                          src="/logo-elevenstoic.png" 
+                          src="/images/logos/logo-elevenstoic.webp" 
                           alt="Elevenstoic Logo" 
                           width={48}
                           height={48}
                           className="w-full h-full object-contain rounded-md"
+                          loading="lazy"
                         />
                       </div>
                       <h5 className="text-lg font-semibold text-white">Elevenstoic</h5>
@@ -117,11 +118,12 @@ export default function Experience() {
                     <div className="flex items-center space-x-3">
                       <div className="w-12 h-12 rounded-lg overflow-hidden bg-white/10 flex items-center justify-center p-1">
                         <Image 
-                          src="/tarotpal-1.png" 
+                          src="/images/tarotpal-1.webp" 
                           alt="TarotPal Logo" 
                           width={48}
                           height={48}
                           className="w-full h-full object-contain rounded-md"
+                          loading="lazy"
                         />
                       </div>
                       <h5 className="text-lg font-semibold text-white">TarotPal</h5>

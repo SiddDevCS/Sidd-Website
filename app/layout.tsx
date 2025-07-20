@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import Navbar from "./components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import dynamic from 'next/dynamic';
 import "./globals.css";
+
+const Navbar = dynamic(() => import("./components/Navbar"), {
+  loading: () => <div className="h-16 bg-black/80 backdrop-blur-sm" />,
+  ssr: true
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,9 +58,9 @@ export const metadata: Metadata = {
     siteName: "Sidd Sehgal's Portfolio",
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
+        url: '/images/Sidd1.webp', // Updated to use existing optimized image
+        width: 128,
+        height: 128,
         alt: 'Sidd Sehgal - Software Developer and Cybersecurity Enthusiast',
       },
     ],
@@ -65,7 +71,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Sidd Sehgal | Portfolio",
     description: "High School Student passionate about Software Development and Cybersecurity. Experienced in mobile app development, web applications, and AI integration.",
-    images: ['/og-image.jpg'],
+    images: ['/images/Sidd1.webp'], // Updated to use existing optimized image
     creator: '@SiddDevTech',
   },
   robots: {
@@ -106,10 +112,17 @@ export default function RootLayout({
         <Navbar />
 
         {/* Main Content */}
-        <main className="flex flex-col items-center justify-center min-h-screen w-full px-4 py-8">
+        <main className="flex flex-col items-center justify-center min-h-screen w-full px-4 py-8" role="main">
           {children}
         </main>
+        
+        {/* Footer */}
+        <footer className="text-center py-8 text-neutral-500 text-sm" role="contentinfo">
+          <p>&copy; {new Date().getFullYear()} Sidd Sehgal. All rights reserved.</p>
+        </footer>
+        
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
