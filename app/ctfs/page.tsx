@@ -247,7 +247,7 @@ export default function CTFs() {
           </p>
 
           <section className="space-y-12">
-            {ctfData.map((ctf, index) => (
+            {ctfData.map((ctf) => (
               <article key={ctf.id} className="glass-card rounded-xl p-8 hover:border-blue-500/20 transition-all duration-300">
                 {/* Header */}
                 <header className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
