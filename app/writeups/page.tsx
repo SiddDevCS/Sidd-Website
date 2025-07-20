@@ -40,7 +40,7 @@ export default function WriteUps() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {writeups.map((writeup, index) => (
+          {writeups.map((writeup) => (
             <Link 
               key={writeup.slug} 
               href={`/writeups/${writeup.slug}`}

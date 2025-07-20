@@ -65,17 +65,14 @@ export default function PasswordProtection({ slug, title, onSuccess }: PasswordP
         setError(`Incorrect password. Attempts remaining: ${5 - attempts - 1}`);
         setPassword('');
       }
-    } catch (err) {
+    } catch {
       setError('An error occurred. Please try again.');
     } finally {
       setIsLoading(false);
     }
   };
 
-  const handleLogout = () => {
-    sessionStorage.removeItem(`writeup-auth-${slug}`);
-    router.refresh();
-  };
+  // Removed unused handleLogout function
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4">

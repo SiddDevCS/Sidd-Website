@@ -1,4 +1,4 @@
-import WriteUpTemplate from "../components/WriteUpTemplate";
+// Removed unused import
 
 export default function CodeWriteUp() {
   return (

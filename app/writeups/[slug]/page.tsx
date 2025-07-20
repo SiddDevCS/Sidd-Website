@@ -46,7 +46,7 @@ const NocturnalWriteUp = () => import('../../write-up-machine-nocturnal/page').t
 const DogWriteUp = () => import('../../write-up-machine-dog/page').then(mod => mod.default);
 const OutboundWriteUp = () => import('../../write-up-machine-outbound/page').then(mod => mod.default);
 
-const writeupComponents: Record<string, () => Promise<any>> = {
+const writeupComponents: Record<string, () => Promise<React.ComponentType>> = {
   jinjacare: JinjaCareWriteUp,
   neovault: NeoVaultWriteUp,
   code: CodeWriteUp,
