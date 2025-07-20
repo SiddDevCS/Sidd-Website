@@ -7,10 +7,10 @@ export const revalidate = 86400; // Revalidate daily
 
 export const metadata: Metadata = {
   title: 'Write-ups | Sidd Sehgal',
-  description: 'Security write-ups and CTF solutions from Hack The Box machines and bug bounty challenges.',
+  description: 'write-ups and CTF solutions from Hack The Box machines and bug bounty challenges.',
   openGraph: {
     title: 'Write-ups | Sidd Sehgal',
-    description: 'Security write-ups and CTF solutions from Hack The Box machines and bug bounty challenges.',
+    description: 'write-ups and CTF solutions from Hack The Box machines and bug bounty challenges.',
   },
 };
 
@@ -22,7 +22,7 @@ export default function WriteUps() {
     <section className="w-full max-w-4xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp px-4">
       <div className="w-full glass-dark rounded-3xl shadow-2xl p-8 md:p-12">
         <h1 className="text-4xl font-bold mb-8 text-center text-gradient-green">
-          Security Write-ups
+          Write-ups
         </h1>
 
         <p className="text-lg text-neutral-400 mb-6 text-center">
