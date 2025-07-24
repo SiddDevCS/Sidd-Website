@@ -27,8 +27,8 @@ This website is a central hub for:
 ---
 
 ## Write-ups & CTFs
-- **Write-ups:** Detailed guides for Hack The Box machines and CTF challenges. Some are password protected for responsible disclosure.
-- **CTF Competitions:** Track my progress in major CTFs, including stats and certificates.
+- **Write-ups:** Guides for Hack The Box machines and CTF challenges (some are password protected).
+- **CTF Competitions:** My progress and achievements in major cybersecurity competitions.
 
 ---
 

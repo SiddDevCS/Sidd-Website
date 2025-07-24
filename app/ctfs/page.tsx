@@ -246,10 +246,10 @@ export default function CTFs() {
             <div className="glass-card rounded-xl p-6 md:p-8 mx-auto max-w-2xl text-center border-l-4 border-blue-500/30">
               <h2 className="text-2xl font-semibold text-blue-400 mb-2">What are CTFs?</h2>
               <p className="text-neutral-300 mb-2">
-                <strong>CTF</strong> stands for <strong>Capture The Flag</strong> — a type of cybersecurity competition where participants solve a variety of challenges in areas like web exploitation, cryptography, binary analysis, and more. Each challenge contains a hidden &quot;flag&quot; (a secret code) that you must find to earn points for your team.
+                <strong>CTFs</strong> (Capture The Flag) are cybersecurity competitions where you solve challenges to find hidden "flags" and earn points.
               </p>
               <p className="text-neutral-400">
-                I love playing CTFs every once in a while to sharpen my cybersecurity skills, learn new techniques, and challenge myself in a fun, competitive environment. Every CTF is a new adventure and a great way to grow as a security enthusiast!
+                Here you can see my progress and achievements in major CTFs.
               </p>
             </div>
           </section>
