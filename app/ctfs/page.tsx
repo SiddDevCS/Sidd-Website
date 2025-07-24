@@ -246,7 +246,7 @@ export default function CTFs() {
             <div className="glass-card rounded-xl p-6 md:p-8 mx-auto max-w-2xl text-center border-l-4 border-blue-500/30">
               <h2 className="text-2xl font-semibold text-blue-400 mb-2">What are CTFs?</h2>
               <p className="text-neutral-300 mb-2">
-                <strong>CTFs</strong> (Capture The Flag) are cybersecurity competitions where you solve challenges to find hidden "flags" and earn points.
+                <strong>CTFs</strong> (Capture The Flag) are cybersecurity competitions where you solve challenges to find hidden &quot;flags&quot; and earn points.
               </p>
               <p className="text-neutral-400">
                 Here you can see my progress and achievements in major CTFs.
