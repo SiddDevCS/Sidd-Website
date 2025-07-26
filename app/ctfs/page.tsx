@@ -104,7 +104,7 @@ const ctfData: CTFEntry[] = [
     teamLink: 'https://ctftime.org/team/392378',
     placement: '622nd',
     totalTeams: 1667,
-    description: 'I solved various challenges in specifically: AI which was prompt injection, web exploitation and other complex categories. This was a great CTF, I enjoyed playing this a lot.',
+    description: 'I solved various challenges in specifically: AI (prompt injection), web exploitation and other complex categories, such as reverse engineering. This was a great CTF, I enjoyed playing this a lot. What motivated me the most was the community and the funny memes in the challenges itself. It was a mix of learning hacking and entertainment.',
     images: [
       {
         src: '/images/ctf-images/image-scoreboard-ductf.png',
@@ -119,7 +119,7 @@ const ctfData: CTFEntry[] = [
         height: 400
       }
     ],
-    categories: ['AI/Prompt Injection', 'Web Exploitation', 'Complex Challenges'],
+    categories: ['AI/Prompt Injection', 'Web Exploitation', 'Burp Suite (Community Edition)', 'Reverse Engineering', 'Binary Exploitation', 'Complex Challenges',],
     solo: true
   },
   {
@@ -130,7 +130,7 @@ const ctfData: CTFEntry[] = [
     teamLink: 'https://ctftime.org/team/392378',
     placement: '509th',
     totalTeams: 1587,
-    description: 'I solved various challenges in categories like: OSINT, web exploitation, cryptography and more. This was a very fun but hard CTF since there were 60+ challenges and I was solo.',
+    description: 'I solved various challenges in categories like: OSINT, web exploitation, cryptography and more. This was a very fun but hard CTF since there were 60+ challenges and I was solo. Although I was on my own, I made as many challenges as I possibly could and ended up completing 10/60 challenges. This was a very fun CTF, and gave me a new perspective on things like OSINT and complex challenges.',
     images: [
       {
         src: '/images/ctf-images/image-scoreboard-l3ak.png',
@@ -139,7 +139,7 @@ const ctfData: CTFEntry[] = [
         height: 400
       }
     ],
-    categories: ['OSINT', 'Web Exploitation', 'Cryptography'],
+    categories: ['OSINT', 'Web Exploitation', 'Cryptography', 'Reverse Engineering/Ghidra', 'Complex Challenges', 'Burp Suite (Community Edition)'],
     solo: true
   },
   {
@@ -150,7 +150,7 @@ const ctfData: CTFEntry[] = [
     teamLink: 'https://ctftime.org/team/392378',
     placement: '242nd',
     totalTeams: 1323,
-    description: 'I solved 1 very hard bug bounty challenge, it was a web application with certificates which were generated, and were vulnerable to SSTI.',
+    description: 'This CTF was a very interesting CTF for me. This was my first solo, and Hack The Box CTF. Out of the 5 complex challenges which were given 2 days for, I solved 1 very hard challenge, it was a Flask-based web application which generated certificates based off of input fields, and were vulnerable to SSTI.',
     images: [
       {
         src: '/images/ctf-images/certificate-bugbountyctf.png',
@@ -159,7 +159,7 @@ const ctfData: CTFEntry[] = [
         height: 400
       }
     ],
-    categories: ['Bug Bounty', 'Web Exploitation', 'SSTI'],
+    categories: ['Bug Bounty', 'Web Exploitation', 'Burp Suite (Community Edition)', 'SSTI', 'Injection Techniques', 'Flask-based (Python)'],
     solo: true
   },
   {
@@ -170,7 +170,7 @@ const ctfData: CTFEntry[] = [
     teamLink: 'https://play.picoctf.org/teams/13151',
     placement: '355th',
     totalTeams: 10460,
-    description: 'I completed several challenges in the following categories: binary exploitation, cryptography, general skills and web exploitation. This first CTF was a great learning for me and was very fun to experience.',
+    description: 'This was my very first CTF, which was luckily beginner-based. I completed several challenges in the following categories: binary exploitation, cryptography, general skills and web exploitation. This first CTF was a great learning for me and was very fun to play and taught me fundamental concepts which could help me in other CTFs.',
     images: [
       {
         src: '/images/ctf-images/stats-sidddev-pico.png',
@@ -246,10 +246,10 @@ export default function CTFs() {
             <div className="glass-card rounded-xl p-6 md:p-8 mx-auto max-w-2xl text-center border-l-4 border-blue-500/30">
               <h2 className="text-2xl font-semibold text-blue-400 mb-2">What are CTFs?</h2>
               <p className="text-neutral-300 mb-2">
-                <strong>CTFs</strong> (Capture The Flag) are cybersecurity competitions where you solve challenges to find hidden &quot;flags&quot; and earn points.
+                <strong>CTFs</strong> (Capture The Flag) are hacking competitions where you solve challenges to find hidden &quot;flags&quot; and earn points while competing with others.
               </p>
               <p className="text-neutral-400">
-                Here you can see my progress and achievements in major CTFs.
+                Here are some of the CTF's I participated in: 
               </p>
             </div>
           </section>

@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 
+import { FaGithub } from "react-icons/fa";
+
 export const metadata: Metadata = {
   title: 'Experience | Sidd Sehgal',
   description: 'Explore my professional experience including internships at Boulevard Legacy LLC and personal projects. View my work in mobile app development, UI/UX design, and software engineering.',
@@ -21,8 +23,21 @@ export default function Experience() {
         <div className="glass-card rounded-xl p-6 mb-8 hover:border-blue-500/20 transition-colors">
           <h2 className="text-2xl font-semibold mb-4 text-gradient-blue">Personal Projects</h2>
           <div className="text-center py-8">
-            <p className="text-neutral-400 text-lg">Coming Soon!</p>
-            <p className="text-neutral-500 text-sm mt-2">Details about my personal projects will be added here.</p>
+            <p className="text-neutral-400 text-lg">I have developed several projects
+              
+              most of them can be found on my GitHub page:</p>
+              <br></br>
+              <div className="flex space-x-6 mb-10 delay-200">
+                <a
+                  href="https://github.com/SiddDevCS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
+                  aria-label="GitHub Profile"
+                >
+                <FaGithub size={40}/>
+                </a>
+              </div>
           </div>
         </div>
 
