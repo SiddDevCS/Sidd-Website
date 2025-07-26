@@ -249,7 +249,7 @@ export default function CTFs() {
                 <strong>CTFs</strong> (Capture The Flag) are hacking competitions where you solve challenges to find hidden &quot;flags&quot; and earn points while competing with others.
               </p>
               <p className="text-neutral-400">
-                Here are some of the CTF's I participated in: 
+                Here are some of the CTFs I participated in: 
               </p>
             </div>
           </section>
