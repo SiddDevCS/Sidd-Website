@@ -26,18 +26,18 @@ export default function Experience() {
             <p className="text-neutral-400 text-lg">I have developed several projects
               
               most of them can be found on my GitHub page:</p>
-              <br></br>
-              <div className="flex space-x-6 mb-10 delay-200">
-                <a
-                  href="https://github.com/SiddDevCS"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
-                  aria-label="GitHub Profile"
-                >
+            <br></br>
+            <div className="flex justify-center space-x-6 mb-10 delay-200">
+              <a
+                href="https://github.com/SiddDevCS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-blue-400 transition-colors duration-300"
+                aria-label="GitHub Profile"
+              >
                 <FaGithub size={40}/>
-                </a>
-              </div>
+              </a>
+            </div>
           </div>
         </div>
 

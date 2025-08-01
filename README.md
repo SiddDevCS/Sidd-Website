@@ -4,7 +4,7 @@ Welcome to my personal website and portfolio! This site showcases my journey as 
 
 **Live Site:** [siddsehgal.vercel.app](https://siddsehgal.vercel.app)
 
----
+--- 
 
 ## Overview
 
