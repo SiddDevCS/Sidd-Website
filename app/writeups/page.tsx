@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function WriteUps() {
   const writeups = getAllWriteUps();
-  const protectedSlugs = ['nocturnal', 'code', 'outbound'];
+  const protectedSlugs = ['nocturnal', 'outbound'];
 
   return (
     <section className="w-full max-w-4xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp px-4">

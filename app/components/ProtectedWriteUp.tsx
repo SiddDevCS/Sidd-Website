@@ -9,7 +9,7 @@ interface ProtectedWriteUpProps {
   children: React.ReactNode;
 }
 
-const PROTECTED_SLUGS = ['nocturnal', 'code', 'outbound'];
+const PROTECTED_SLUGS = ['nocturnal', 'outbound'];
 
 export default function ProtectedWriteUp({ slug, title, children }: ProtectedWriteUpProps) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

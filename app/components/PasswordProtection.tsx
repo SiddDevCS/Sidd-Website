@@ -12,7 +12,6 @@ interface PasswordProtectionProps {
 // Secure password hashes (using SHA-256 of the passwords)
 const PROTECTED_WRITEUPS: Record<string, string> = {
   'nocturnal': '09db7bb2533aed0610cd00949232b569314c04aa9f2bd9829d6ce99b27d75c52', // Hash of "SiddPwnedNocturnal"
-  'code': '4d592bdf5f2513c56024fecf571fb9011563106c38f467491d9bdfb119f4a989', // Hash of "SiddPwnedCode"
   'outbound': '95a7040b0cf01bc45f0762c789d508b82a1e3167b67d1b6ce26d1ac0fc15b972', // Hash of "SiddPwnedOutbound"
 };
 
