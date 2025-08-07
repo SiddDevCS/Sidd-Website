@@ -10,6 +10,15 @@ export interface WriteUp {
 
 export const writeups: WriteUp[] = [
   {
+    slug: 'era',
+    title: 'Era',
+    category: 'HTB Machine',
+    difficulty: 'Medium',
+    description: 'A Linux machine involving vhost enumeration, IDOR vulnerability, hash cracking, SSRF exploitation, and binary signing for privilege escalation.',
+    date: '2025-07-31',
+    tags: ['Vhost Enumeration', 'IDOR', 'Hash Cracking', 'SSRF', 'Binary Signing', 'Privilege Escalation', 'Linux']
+  },
+  {
     slug: 'jinjacare',
     title: 'JinjaCare',
     category: 'Bug Bounty CTF',

@@ -13,6 +13,7 @@ interface PasswordProtectionProps {
 const PROTECTED_WRITEUPS: Record<string, string> = {
   'nocturnal': '09db7bb2533aed0610cd00949232b569314c04aa9f2bd9829d6ce99b27d75c52', // Hash of "SiddPwnedNocturnal"
   'outbound': '95a7040b0cf01bc45f0762c789d508b82a1e3167b67d1b6ce26d1ac0fc15b972', // Hash of "SiddPwnedOutbound"
+  'era': '9a47573c9a240940bb239c812d8ea2d21161baa5ddd7a092dfe0580e316a6aa0', // Hash of "SiddPwnedEra"
 };
 
 // Simple hash function (in production, use crypto.subtle.digest)
@@ -31,7 +32,7 @@ export default function PasswordProtection({ slug, title, onSuccess }: PasswordP
   const [attempts, setAttempts] = useState(0);
   const router = useRouter();
 
-  // Check if user is already authenticated
+  // Check if user is already authenticatedd
   useEffect(() => {
     const isAuthenticated = sessionStorage.getItem(`writeup-auth-${slug}`);
     if (isAuthenticated === 'true') {

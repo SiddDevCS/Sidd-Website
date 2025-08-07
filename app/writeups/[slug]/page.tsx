@@ -45,6 +45,7 @@ const CodeWriteUp = () => import('../../write-up-machine-code/page').then(mod =>
 const NocturnalWriteUp = () => import('../../write-up-machine-nocturnal/page').then(mod => mod.default);
 const DogWriteUp = () => import('../../write-up-machine-dog/page').then(mod => mod.default);
 const OutboundWriteUp = () => import('../../write-up-machine-outbound/page').then(mod => mod.default);
+const EraWriteUp = () => import('../../write-up-era/page').then(mod => mod.default);
 
 const writeupComponents: Record<string, () => Promise<React.ComponentType>> = {
   jinjacare: JinjaCareWriteUp,
@@ -53,6 +54,7 @@ const writeupComponents: Record<string, () => Promise<React.ComponentType>> = {
   nocturnal: NocturnalWriteUp,
   dog: DogWriteUp,
   outbound: OutboundWriteUp,
+  era: EraWriteUp,
 };
 
 export default async function WriteUpPage({ params }: { params: Promise<{ slug: string }> }) {
