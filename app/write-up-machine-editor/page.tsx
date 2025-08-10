@@ -149,13 +149,13 @@ Nmap done: 1 IP address scanned in 18.47 seconds
       </ul>
 
       <p className="text-neutral-300">
-        I started looking for some CVE's, but nothing which worked for these frameworks. Then later, I saw that in the panel, it mentions xwiki's version. And that leads us to the following CVE: <strong>CVE-2025-24893</strong>.
+        I started looking for some CVE&apos;s, but nothing which worked for these frameworks. Then later, I saw that in the panel, it mentions xwiki&apos;s version. And that leads us to the following CVE: <strong>CVE-2025-24893</strong>.
       </p>
 
       <h2 className="text-2xl font-bold text-green-400">Exploitation</h2>
 
       <p className="text-neutral-300">
-        We can get a reverse shell, so that's what I did!
+        We can get a reverse shell, so that&apos;s what I did!
       </p>
 
       <p className="text-neutral-300">
@@ -192,7 +192,7 @@ webapps`}</code>
       </pre>
 
       <p className="text-neutral-300">
-        With this reverse shell, the next thing that we need to do is probably look for user.txt. I tried accessing /usr and saw that there was a user named Oliver. I tried going into his directory, but nope, no permissions. This means we need some type of a password. Let's look for it!
+        With this reverse shell, the next thing that we need to do is probably look for user.txt. I tried accessing /usr and saw that there was a user named Oliver. I tried going into his directory, but nope, no permissions. This means we need some type of a password. Let&apos;s look for it!
       </p>
 
       <p className="text-neutral-300">
@@ -214,7 +214,7 @@ webapps`}</code>
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
-        <code>/etc/xwiki/hibernate.cfg.xml: <property name="hibernate.connection.password">**theEd1t0rTeam99**</property></code>
+        <code>/etc/xwiki/hibernate.cfg.xml: &lt;property name="hibernate.connection.password"&gt;**theEd1t0rTeam99**&lt;/property&gt;</code>
       </pre>
 
       <p className="text-neutral-300">
