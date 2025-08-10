@@ -118,7 +118,7 @@ Nmap done: 1 IP address scanned in 18.47 seconds
       </p>
 
       <p className="text-neutral-300">
-        There has to be some type of CVE here, so let's use wappalyzer to check versions:
+        There has to be some type of CVE here, so let&apos;s use wappalyzer to check versions:
       </p>
 
       <div className="rounded-lg overflow-hidden border border-neutral-800 mb-6">
@@ -200,7 +200,7 @@ webapps`}</code>
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
-        <code>grep -iE 'pass|secret|credentials' /etc/xwiki/* 2&gt;/dev/null</code>
+        <code>grep -iE &apos;pass|secret|credentials&apos; /etc/xwiki/* 2&gt;/dev/null</code>
       </pre>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
@@ -214,7 +214,7 @@ webapps`}</code>
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
-        <code>/etc/xwiki/hibernate.cfg.xml: &lt;property name="hibernate.connection.password"&gt;**theEd1t0rTeam99**&lt;/property&gt;</code>
+        <code>/etc/xwiki/hibernate.cfg.xml: &lt;property name=&quot;hibernate.connection.password&quot;&gt;**theEd1t0rTeam99**&lt;/property&gt;</code>
       </pre>
 
       <p className="text-neutral-300">
@@ -222,7 +222,7 @@ webapps`}</code>
       </p>
 
       <p className="text-neutral-300">
-        Let's su (switch user):
+        Let&apos;s su (switch user):
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
@@ -282,7 +282,7 @@ oliver@editor:~$`}</code>
       <h2 className="text-2xl font-bold text-green-400">Privilege Escalation</h2>
 
       <p className="text-neutral-300">
-        Let's gather some basic info:
+        Let&apos;s gather some basic info:
       </p>
 
       <pre className="bg-black/50 p-4 rounded-lg overflow-x-auto">
