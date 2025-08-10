@@ -13,7 +13,7 @@ interface WriteUpTemplateProps {
 
 export default function WriteUpTemplate({ title, category, difficulty, children }: WriteUpTemplateProps) {
   const router = useRouter();
-  const protectedSlugs = ['nocturnal', 'code', 'outbound'];
+  const protectedSlugs = ['editor', 'nocturnal', 'code', 'outbound'];
   
   // Check if current write-up is protected by looking at the URL
   const isProtected = typeof window !== 'undefined' && protectedSlugs.some(slug => 

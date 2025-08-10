@@ -10,6 +10,15 @@ export interface WriteUp {
 
 export const writeups: WriteUp[] = [
   {
+    slug: 'editor',
+    title: 'Editor',
+    category: 'HTB Machine',
+    difficulty: 'Easy',
+    description: 'A Linux machine involving XWiki exploitation via CVE-2025-24893, credential extraction, and PATH hijacking for privilege escalation.',
+    date: '2025-08-04',
+    tags: ['XWiki', 'CVE-2025-24893', 'RCE', 'Credential Extraction', 'PATH Hijacking', 'Privilege Escalation', 'Linux']
+  },
+  {
     slug: 'era',
     title: 'Era',
     category: 'HTB Machine',

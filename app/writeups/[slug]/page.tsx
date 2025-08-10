@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 // Import write-up components
+const EditorWriteUp = () => import('../../write-up-machine-editor/page').then(mod => mod.default);
 const JinjaCareWriteUp = () => import('../../write-up-bugbountyctf-jinjacare/page').then(mod => mod.default);
 const NeoVaultWriteUp = () => import('../../write-up-bugbountyctf-neovault/page').then(mod => mod.default);
 const CodeWriteUp = () => import('../../write-up-machine-code/page').then(mod => mod.default);
@@ -48,6 +49,7 @@ const OutboundWriteUp = () => import('../../write-up-machine-outbound/page').the
 const EraWriteUp = () => import('../../write-up-era/page').then(mod => mod.default);
 
 const writeupComponents: Record<string, () => Promise<React.ComponentType>> = {
+  editor: EditorWriteUp,
   jinjacare: JinjaCareWriteUp,
   neovault: NeoVaultWriteUp,
   code: CodeWriteUp,

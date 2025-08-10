@@ -37,6 +37,11 @@ const imagesToConvert = [
   { input: 'public/images/write-up-outbound/2025-07-16_13-16.png', output: 'public/images/write-up-outbound/2025-07-16_13-16.webp' },
   { input: 'public/images/write-up-outbound/2025-07-16_13-18.png', output: 'public/images/write-up-outbound/2025-07-16_13-18.webp' },
   { input: 'public/images/write-up-outbound/2025-07-16_13-19.png', output: 'public/images/write-up-outbound/2025-07-16_13-19.webp' },
+  
+  // Editor write-up images
+  { input: 'public/images/write-up-editor/Screenshot 2025-08-04 at 15.52.58.png', output: 'public/images/write-up-editor/editor-nmap-scan.webp' },
+  { input: 'public/images/write-up-editor/Screenshot 2025-08-03 at 14.44.49.png', output: 'public/images/write-up-editor/editor-domain.webp' },
+  { input: 'public/images/write-up-editor/Screenshot 2025-08-04 at 12.10.52.png', output: 'public/images/write-up-editor/editor-wappalyzer.webp' },
 ];
 
 async function convertImages() {
