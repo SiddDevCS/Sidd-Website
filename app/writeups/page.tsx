@@ -29,6 +29,27 @@ export default function WriteUps() {
           My journey through Hack The Box machines and bug bounty challenges
         </p>
         
+        {/* Medium Button */}
+        <div className="text-center mb-10">
+          <div className="glass-card rounded-2xl p-6 border-2 border-green-500/20 hover:border-green-500/40 transition-all duration-300 group">
+            <h3 className="text-xl font-bold text-white mb-2">More Write-ups on Medium</h3>
+            <p className="text-neutral-400 mb-6 text-sm leading-relaxed">
+              Most of my Hack The Box machine write-ups are available on my Medium profile with detailed explanations and step-by-step guides.
+            </p>
+            <a
+              href="https://medium.com/@siddnative"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            >
+              <span>Visit Medium</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        
         <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 mb-10">
           <div className="flex items-center gap-2 text-yellow-400 mb-2">
             <FaLock className="text-sm" />
