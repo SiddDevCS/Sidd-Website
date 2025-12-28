@@ -5,10 +5,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'CTF Competitions | Sidd Sehgal',
-  description: 'My journey through Capture The Flag competitions including PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025. Track my progress and achievements in cybersecurity challenges.',
+  description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025. Track my progress and achievements in cybersecurity challenges.',
   keywords: [
     'CTF',
     'Capture The Flag',
+    'PicoCTF Mini',
     'PicoCTF 2025',
     'Hack The System',
     'Bug Bounty CTF',
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://siddsehgal.com'),
   openGraph: {
     title: 'CTF Competitions | Sidd Sehgal',
-    description: 'My journey through Capture The Flag competitions including PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
+    description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
     url: 'https://siddsehgal.com/ctfs',
     siteName: "Sidd Sehgal's Portfolio",
     images: [
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CTF Competitions | Sidd Sehgal',
-    description: 'My journey through Capture The Flag competitions including PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
+    description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
     images: ['/images/ctf-images/stats-sidddev-pico.png'],
     creator: '@SiddDevTech',
   },
@@ -96,6 +97,32 @@ interface CTFEntry {
 }
 
 const ctfData: CTFEntry[] = [
+  {
+    id: 5,
+    name: 'PicoCTF Mini',
+    date: 'December 2025',
+    teamName: 'S1DD3CATED',
+    teamLink: 'https://ctftime.org/team/392378',
+    placement: '2nd',
+    totalTeams: 2942,
+    description: 'I completed this CTF in just 2 hours on my own, solving challenges across multiple categories. The reverse engineering challenges were particularly harder but fun, pushing me to think creatively and apply advanced techniques. I successfully completed all challenges in Binary Exploitation (2/2), Cryptography (1/1), Forensics (4/4), General Skills (1/1), and Reverse Engineering (2/2), along with Web Exploitation challenges.',
+    images: [
+      {
+        src: '/images/pico-miini/image-pico-mini-1.png',
+        alt: 'PicoCTF Mini placement and statistics image 1',
+        width: 800,
+        height: 400
+      },
+      {
+        src: '/images/pico-miini/image-pico-mini-2.png',
+        alt: 'PicoCTF Mini placement and statistics image 2',
+        width: 800,
+        height: 400
+      }
+    ],
+    categories: ['Binary Exploitation', 'Cryptography', 'Forensics', 'General Skills', 'Reverse Engineering', 'Web Exploitation'],
+    solo: true
+  },
   {
     id: 4,
     name: 'DownUnderCTF 2025',
@@ -361,11 +388,11 @@ export default function CTFs() {
                 <div className="text-neutral-400">CTFs Completed</div>
               </div>
               <div className="glass-card rounded-xl p-6">
-                <div className="text-3xl font-bold text-green-400 mb-2">3</div>
+                <div className="text-3xl font-bold text-green-400 mb-2">4</div>
                 <div className="text-neutral-400">Solo Competitions</div>
               </div>
               <div className="glass-card rounded-xl p-6">
-                <div className="text-3xl font-bold text-purple-400 mb-2">15,137</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">17,979</div>
                 <div className="text-neutral-400">Total Teams Competed Against</div>
               </div>
             </div>

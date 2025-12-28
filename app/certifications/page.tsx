@@ -91,16 +91,6 @@ export default function Certifications() {
             </div>
           </div>
         </div>
-
-        {/* Future Certifications Section */}
-        <div className="glass-card rounded-xl p-6 hover:border-neutral-500/20 transition-colors">
-          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Future Goals</h2>
-          <p className="text-neutral-400 leading-relaxed">
-            I&apos;m continuously expanding my cybersecurity knowledge and plan to pursue additional certifications 
-            including OSCP (Offensive Security Certified Professional) and other advanced security certifications 
-            to further enhance my expertise in the field.
-          </p>
-        </div>
       </div>
     </section>
   );
