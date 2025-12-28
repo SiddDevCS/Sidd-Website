@@ -12,7 +12,7 @@ The portfolio page has been moved here for easy restoration.
 3. Add the portfolio entry back to `app/sitemap.ts` in the `staticPages` array
 
 **Original location:** `app/portfolio/page.tsx`
-**Backup location:** `app/_backup/portfolio/page.tsx`
+**Backup location:** `_backup/portfolio/page.tsx`
 
 ## Writeups Page
 
@@ -37,5 +37,5 @@ The entire writeups directory has been moved here for easy restoration.
    - Update the return statement to include writeup pages: `return [...staticPages, ...writeupPages]`
 
 **Original location:** `app/writeups/`
-**Backup location:** `app/_backup/writeups/`
+**Backup location:** `_backup/writeups/`
 
