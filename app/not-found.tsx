@@ -26,12 +26,6 @@ export default function NotFound() {
           >
             Go Home
           </Link>
-          <Link
-            href="/writeups"
-            className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200"
-          >
-            Browse Write-ups
-          </Link>
         </div>
 
         <div className="mt-8 pt-8 border-t border-neutral-700">

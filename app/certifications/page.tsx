@@ -46,7 +46,7 @@ export default function Certifications() {
                   Cybersecurity
                 </span>
                 <span className="px-3 py-1 bg-neutral-500/20 text-neutral-400 rounded-full text-sm font-medium">
-                  2025
+                  July 2025
                 </span>
               </div>
             </div>

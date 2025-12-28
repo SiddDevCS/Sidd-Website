@@ -39,7 +39,6 @@ export default function Navbar() {
     { name: "About", path: "/about" },
     { name: "Certifications", path: "/certifications" },
     { name: "CTF's", path: "/ctfs" },
-    { name: "Write-ups", path: "/writeups" },
     { name: "Contact", path: "/contact" },
   ];
 
