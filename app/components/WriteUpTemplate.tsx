@@ -44,14 +44,6 @@ export default function WriteUpTemplate({ title, category, difficulty, children 
             <li>
               <span className="text-neutral-600">/</span>
             </li>
-            <li>
-              <Link href="/writeups" className="hover:text-blue-400 transition-colors">
-                Write-ups
-              </Link>
-            </li>
-            <li>
-              <span className="text-neutral-600">/</span>
-            </li>
             <li className="text-neutral-300" aria-current="page">
               {title}
             </li>
@@ -92,13 +84,13 @@ export default function WriteUpTemplate({ title, category, difficulty, children 
           </div>
           
           <Link
-            href="/writeups"
+            href="/"
             className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-sm"
           >
             <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            Back to Write-ups
+            Back to Home
           </Link>
         </header>
 

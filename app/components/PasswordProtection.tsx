@@ -122,10 +122,10 @@ export default function PasswordProtection({ slug, title, onSuccess }: PasswordP
 
           <div className="mt-6 text-center">
             <button
-              onClick={() => router.push('/writeups')}
+              onClick={() => router.push('/')}
               className="text-neutral-400 hover:text-neutral-200 text-sm transition-colors"
             >
-              ← Back to Write-ups
+              ← Back to Home
             </button>
           </div>
         </div>
