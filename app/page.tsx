@@ -7,9 +7,9 @@ export default function Home() {
       {/* Preload critical image */}
       <link
         rel="preload"
-        href="/images/Sidd1.webp"
+        href="/images/pfp-sidd/IMG_0411.jpeg"
         as="image"
-        type="image/webp"
+        type="image/jpeg"
       />
       
       <section className="w-full max-w-xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp">
@@ -20,7 +20,7 @@ export default function Home() {
             <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 opacity-75 blur"></div>
             <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-neutral-800">
               <Image
-                src="/images/Sidd1.webp"
+                src="/images/pfp-sidd/IMG_0411.jpeg"
                 alt="Sidd Sehgal - Software Developer and Cybersecurity Enthusiast"
                 width={128}
                 height={128}
