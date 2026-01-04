@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaLock } from "react-icons/fa";
 import type { Metadata } from 'next';
 import { getAllWriteUps } from '../data/writeups';
 
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
 
 export default function WriteUps() {
   const writeups = getAllWriteUps();
-  const protectedSlugs = ['editor', 'outbound', 'era'];
 
   return (
     <section className="w-full max-w-4xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp px-4">
@@ -24,6 +22,12 @@ export default function WriteUps() {
         <h1 className="text-4xl font-bold mb-8 text-center text-gradient-green">
           Write-ups
         </h1>
+
+        <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4 mb-6 text-center">
+          <p className="text-blue-300 text-sm">
+            These were all active machines I played during Season 8 of Hack The Box (May-August 2025).
+          </p>
+        </div>
 
         <p className="text-lg text-neutral-400 mb-6 text-center">
           My journey through Hack The Box machines and bug bounty challenges
@@ -49,16 +53,6 @@ export default function WriteUps() {
             </a>
           </div>
         </div>
-        
-        <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 mb-10">
-          <div className="flex items-center gap-2 text-yellow-400 mb-2">
-            <FaLock className="text-sm" />
-            <span className="font-medium">Password Protected Write-ups</span>
-          </div>
-          <p className="text-neutral-400 text-sm">
-            Some write-ups are password protected. You&apos;ll need the correct password to access them.
-          </p>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {writeups.map((writeup) => (
@@ -74,9 +68,6 @@ export default function WriteUps() {
                       <h3 className="text-xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
                         {writeup.title}
                       </h3>
-                      {protectedSlugs.includes(writeup.slug) && (
-                        <FaLock className="text-yellow-400 text-sm" title="Password Protected" />
-                      )}
                     </div>
                     <div className="flex gap-2">
                       <span className="px-3 py-1 text-sm rounded-full bg-green-500/10 text-green-400">
@@ -129,3 +120,4 @@ export default function WriteUps() {
     </section>
   );
 }
+

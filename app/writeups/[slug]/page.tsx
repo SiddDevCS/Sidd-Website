@@ -121,3 +121,4 @@ export default async function WriteUpPage({ params }: { params: Promise<{ slug: 
     </>
   );
 }
+
