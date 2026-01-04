@@ -37,7 +37,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Experience", path: "/experience" },
+    { name: "Journey", path: "/journey" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "Certifications", path: "/certifications" },
     { name: "CTF's", path: "/ctfs" },
@@ -54,7 +54,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center">
           {/* Made with Cursor - Top Left */}
-          <span className="absolute top-2 left-4 text-xs text-neutral-500">Made with Cursor</span>
+          {/*<span className="absolute top-2 left-4 text-xs text-neutral-500">Made with Cursor</span>*/}
           
           {/* Logo/Home */}
           <Link
