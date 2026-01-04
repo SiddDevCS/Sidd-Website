@@ -113,9 +113,7 @@ export default function WriteUps() {
 
         <div className="w-16 h-px bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-10 mx-auto"></div>
 
-        <p className="text-neutral-400 text-sm text-center">
-          More write-ups coming soon...
-        </p>
+
       </div>
     </section>
   );
