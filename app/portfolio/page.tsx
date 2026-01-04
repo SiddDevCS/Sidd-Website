@@ -22,7 +22,7 @@ export default function Portfolio() {
         
         <div className="glass-card rounded-xl p-4 overflow-hidden">
           <iframe
-            src="/documents/new-portfolio-sidd-2026.pdf"
+            src="/documents/Sidd Portfolio.pdf"
             className="w-full h-[800px] md:h-[1000px] border-0 rounded-lg"
             title="Sidd Sehgal Portfolio"
           />
