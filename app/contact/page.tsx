@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: 'Contact | Sidd Sehgal',
-  description: 'Get in touch with Sidd Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
+  title: 'Contact | Siddharth Sehgal',
+  description: 'Get in touch with Siddharth Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
   openGraph: {
-    title: 'Contact | Sidd Sehgal',
-    description: 'Get in touch with Sidd Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
+    title: 'Contact | Siddharth Sehgal',
+    description: 'Get in touch with Siddharth Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
   },
 };
 

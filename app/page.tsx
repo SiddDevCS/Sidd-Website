@@ -21,7 +21,7 @@ export default function Home() {
             <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-neutral-800">
               <Image
                 src="/images/pfp-sidd/IMG_0411.jpeg"
-                alt="Sidd Sehgal - Software Developer and Cybersecurity Enthusiast"
+                alt="Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast"
                 width={128}
                 height={128}
                 className="object-cover w-full h-full"
@@ -35,11 +35,11 @@ export default function Home() {
 
           {/* Name and Tagline */}
           <h1 className="text-4xl font-bold mt-8 mb-2 text-center text-gradient animate-fadeInUp">
-            Sidd Sehgal
+            Siddharth Sehgal
           </h1>
 
           <p className="text-lg text-neutral-400 mb-6 text-center animate-fadeInUp delay-100">
-            Hi! I&apos;m Sidd. I love developing mobile apps and web-based applications, and I&apos;m passionate about cybersecurity.
+            Hi! I&apos;m Siddharth. I love developing mobile apps and web-based applications, and I&apos;m passionate about cybersecurity.
           </p>
 
           {/* Social Media Links */}

@@ -4,11 +4,11 @@ import type { Metadata } from 'next';
 export const revalidate = 86400; // Revalidate daily
 
 export const metadata: Metadata = {
-  title: 'JinjaCare CTF Write-up | Sidd Sehgal',
+  title: 'JinjaCare CTF Write-up | Siddharth Sehgal',
   description: 'Detailed write-up of the JinjaCare bug bounty CTF challenge, covering SSTI (Server-Side Template Injection) vulnerabilities and RCE exploitation techniques.',
   keywords: ['JinjaCare', 'CTF', 'Bug Bounty', 'SSTI', 'RCE', 'Flask', 'Jinja2', 'Security', 'Write-up'],
   openGraph: {
-    title: 'JinjaCare CTF Write-up | Sidd Sehgal',
+    title: 'JinjaCare CTF Write-up | Siddharth Sehgal',
     description: 'Detailed write-up of the JinjaCare bug bounty CTF challenge, covering SSTI vulnerabilities and RCE exploitation.',
     type: 'article',
   },

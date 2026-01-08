@@ -41,7 +41,7 @@ export async function GET() {
                 marginBottom: 16,
               }}
             >
-              Sidd Sehgal
+              Siddharth Sehgal
             </h1>
             <p
               style={{

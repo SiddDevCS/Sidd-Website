@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Certifications | Sidd Sehgal',
-  description: 'View Sidd Sehgal\'s professional certifications including CompTIA Security+ and eJPT certification.',
+  title: 'Certifications | Siddharth Sehgal',
+  description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT certification.',
   openGraph: {
-    title: 'Certifications | Sidd Sehgal',
-    description: 'View Sidd Sehgal\'s professional certifications including CompTIA Security+ and eJPT certification.',
+    title: 'Certifications | Siddharth Sehgal',
+    description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT certification.',
   },
 };
 

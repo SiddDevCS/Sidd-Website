@@ -22,16 +22,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!writeup) {
     return {
-      title: 'Write-up Not Found | Sidd Sehgal',
+      title: 'Write-up Not Found | Siddharth Sehgal',
     };
   }
 
   return {
-    title: `${writeup.title} Write-up | Sidd Sehgal`,
+    title: `${writeup.title} Write-up | Siddharth Sehgal`,
     description: writeup.description,
     keywords: writeup.tags,
     openGraph: {
-      title: `${writeup.title} Write-up | Sidd Sehgal`,
+      title: `${writeup.title} Write-up | Siddharth Sehgal`,
       description: writeup.description,
       type: 'article',
     },
@@ -83,12 +83,12 @@ export default async function WriteUpPage({ params }: { params: Promise<{ slug: 
     "description": writeup.description,
     "author": {
       "@type": "Person",
-      "name": "Sidd Sehgal",
+      "name": "Siddharth Sehgal",
       "url": "https://siddsehgal.com"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Sidd Sehgal's Portfolio",
+      "name": "Siddharth Sehgal's Portfolio",
       "url": "https://siddsehgal.com"
     },
     "datePublished": writeup.date,
@@ -121,4 +121,5 @@ export default async function WriteUpPage({ params }: { params: Promise<{ slug: 
     </>
   );
 }
+
 

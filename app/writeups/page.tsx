@@ -5,10 +5,10 @@ import { getAllWriteUps } from '../data/writeups';
 export const revalidate = 86400; // Revalidate daily
 
 export const metadata: Metadata = {
-  title: 'Write-ups | Sidd Sehgal',
+  title: 'Write-ups | Siddharth Sehgal',
   description: 'write-ups and CTF solutions from Hack The Box machines and bug bounty challenges.',
   openGraph: {
-    title: 'Write-ups | Sidd Sehgal',
+    title: 'Write-ups | Siddharth Sehgal',
     description: 'write-ups and CTF solutions from Hack The Box machines and bug bounty challenges.',
   },
 };

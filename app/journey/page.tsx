@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Journey | Sidd Sehgal',
-  description: 'Follow Sidd Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, and professional experience.',
+  title: 'Journey | Siddharth Sehgal',
+  description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, and professional experience.',
   openGraph: {
-    title: 'Journey | Sidd Sehgal',
-    description: 'Follow Sidd Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, and professional experience.',
+    title: 'Journey | Siddharth Sehgal',
+    description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, and professional experience.',
   },
 };
 

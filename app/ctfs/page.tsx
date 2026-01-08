@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     'CTF Rankings',
     'Cybersecurity Skills'
   ],
-  authors: [{ name: 'Sidd Sehgal' }],
-  creator: 'Sidd Sehgal',
-  publisher: 'Sidd Sehgal',
+  authors: [{ name: 'Siddharth Sehgal' }],
+  creator: 'Siddharth Sehgal',
+  publisher: 'Siddharth Sehgal',
   formatDetection: {
     email: false,
     address: false,
@@ -39,16 +39,16 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://siddsehgal.com'),
   openGraph: {
-    title: 'CTF Competitions | Sidd Sehgal',
+    title: 'CTF Competitions | Siddharth Sehgal',
     description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
     url: 'https://siddsehgal.com/ctfs',
-    siteName: "Sidd Sehgal's Portfolio",
+    siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
         url: '/images/ctf-images/stats-sidddev-pico.png',
         width: 600,
         height: 400,
-        alt: 'Sidd Sehgal CTF Statistics and Achievements',
+        alt: 'Siddharth Sehgal CTF Statistics and Achievements',
       },
     ],
     locale: 'en_US',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CTF Competitions | Sidd Sehgal',
+    title: 'CTF Competitions | Siddharth Sehgal',
     description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
     images: ['/images/ctf-images/stats-sidddev-pico.png'],
     creator: '@SiddDevTech',
@@ -222,11 +222,11 @@ export default function CTFs() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "CTF Competitions | Sidd Sehgal",
+    "name": "CTF Competitions | Siddharth Sehgal",
     "description": "My journey through Capture The Flag competitions including PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.",
     "author": {
       "@type": "Person",
-      "name": "Sidd Sehgal",
+      "name": "Siddharth Sehgal",
       "url": "https://siddsehgal.com"
     },
     "mainEntity": {

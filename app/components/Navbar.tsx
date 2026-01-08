@@ -61,7 +61,7 @@ export default function Navbar() {
             href="/"
             className="text-xl font-bold text-gradient hover:opacity-80 transition-opacity"
           >
-            Sidd Sehgal
+            Siddharth Sehgal
           </Link>
 
           {/* Desktop Navigation */}

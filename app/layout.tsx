@@ -21,10 +21,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sidd Sehgal | Portfolio",
+  title: "Siddharth Sehgal | Portfolio",
   description: "High School Student passionate about Software Development and Cybersecurity. Experienced in mobile app development, web applications, and AI integration.",
   keywords: [
-    "Sidd Sehgal",
+    "Siddharth Sehgal",
     "Software Development",
     "Cybersecurity",
     "Mobile Apps",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     "React",
     "TypeScript",
   ],
-  authors: [{ name: "Sidd Sehgal" }],
-  creator: "Sidd Sehgal",
-  publisher: "Sidd Sehgal",
+  authors: [{ name: "Siddharth Sehgal" }],
+  creator: "Siddharth Sehgal",
+  publisher: "Siddharth Sehgal",
   formatDetection: {
     email: false,
     address: false,
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   metadataBase: new URL('https://siddsehgal.com'),
   openGraph: {
-    title: "Sidd Sehgal | Portfolio",
+    title: "Siddharth Sehgal | Portfolio",
     description: "High School Student passionate about Software Development and Cybersecurity. Experienced in mobile app development, web applications, and AI integration.",
     url: 'https://siddsehgal.com',
-    siteName: "Sidd Sehgal's Portfolio",
+    siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
         url: '/images/Sidd1.webp', // Updated to use existing optimized image
         width: 128,
         height: 128,
-        alt: 'Sidd Sehgal - Software Developer and Cybersecurity Enthusiast',
+        alt: 'Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast',
       },
     ],
     locale: 'en_US',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Sidd Sehgal | Portfolio",
+    title: "Siddharth Sehgal | Portfolio",
     description: "High School Student passionate about Software Development and Cybersecurity. Experienced in mobile app development, web applications, and AI integration.",
     images: ['/images/Sidd1.webp'], // Updated to use existing optimized image
     creator: '@SiddDevTech',
@@ -118,7 +118,7 @@ export default function RootLayout({
         
         {/* Footer */}
         <footer className="text-center py-8 text-neutral-500 text-sm" role="contentinfo">
-          <p>&copy; {new Date().getFullYear()} Sidd Sehgal. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Siddharth Sehgal. All rights reserved.</p>
         </footer>
         
         <Analytics />

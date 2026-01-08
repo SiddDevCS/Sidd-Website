@@ -1,4 +1,4 @@
-# Sidd Sehgal Portfolio
+# Siddharth Sehgal Portfolio
 
 Welcome to my personal website and portfolio! This site showcases my journey as a software developer and cybersecurity enthusiast, featuring my projects, CTF (Capture The Flag) achievements, technical write-ups, and more.
 
@@ -49,7 +49,7 @@ This website is a central hub for:
 
 ## License
 
-All code, content, and materials in this repository and website are the exclusive property of Sidd Sehgal. 
+All code, content, and materials in this repository and website are the exclusive property of Siddharth Sehgal. 
 
 **Unauthorized copying, reproduction, distribution, or use of any part of this website or its source code is strictly prohibited.**
 

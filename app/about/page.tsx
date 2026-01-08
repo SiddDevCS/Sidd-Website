@@ -2,11 +2,11 @@ import React from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Me | Sidd Sehgal',
-  description: 'Learn about Sidd Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
+  title: 'About Me | Siddharth Sehgal',
+  description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
   openGraph: {
-    title: 'About Me | Sidd Sehgal',
-    description: 'Learn about Sidd Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
+    title: 'About Me | Siddharth Sehgal',
+    description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
   },
 };
 
@@ -18,7 +18,7 @@ export default function About() {
         
         {/* Introduction */}
         <div className="glass-card rounded-xl p-6 mb-8 hover:border-blue-500/20 transition-colors">
-          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Hey, I&apos;m Sidd!</h2>
+          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Hey, I&apos;m Siddharth!</h2>
           <p className="text-neutral-400 leading-relaxed">
             I&apos;m really into tech, creativity, and figuring out how things work. 
             I remember making my first game with Unity Game Engine in 2024, and I&apos;ve been hooked to developing ever since.

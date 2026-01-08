@@ -4,13 +4,13 @@ import type { Metadata } from 'next';
 export const revalidate = 3600; // Revalidate every hour
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Sidd Sehgal',
+  title: 'Portfolio | Siddharth Sehgal',
   description:
-    'View Sidd Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
+    'View Siddharth Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
   openGraph: {
-    title: 'Portfolio | Sidd Sehgal',
+    title: 'Portfolio | Siddharth Sehgal',
     description:
-      'View Sidd Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
+      'View Siddharth Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
   },
 };
 
@@ -24,7 +24,7 @@ export default function Portfolio() {
           <iframe
             src="/documents/Sidd Portfolio.pdf"
             className="w-full h-[800px] md:h-[1000px] border-0 rounded-lg"
-            title="Sidd Sehgal Portfolio"
+            title="Siddharth Sehgal Portfolio"
           />
         </div>
       </div>

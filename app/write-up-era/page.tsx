@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import ProtectedWriteUp from '../components/ProtectedWriteUp';
 
 export const metadata: Metadata = {
-  title: 'Era - HTB Machine Write-up | Sidd Sehgal',
+  title: 'Era - HTB Machine Write-up | Siddharth Sehgal',
   description: 'Complete walkthrough of the Era HTB machine - a medium difficulty Linux machine involving vhost enumeration, IDOR vulnerability, hash cracking, SSRF exploitation, and binary signing for privilege escalation.',
   keywords: [
     'Era',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'Walkthrough'
   ],
   openGraph: {
-    title: 'Era - HTB Machine Write-up | Sidd Sehgal',
+    title: 'Era - HTB Machine Write-up | Siddharth Sehgal',
     description: 'Complete walkthrough of the Era HTB machine - a medium difficulty Linux machine involving vhost enumeration, IDOR vulnerability, hash cracking, SSRF exploitation, and binary signing for privilege escalation.',
   },
 };
