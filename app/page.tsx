@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Siddharth Sehgal | Software Developer & Cybersecurity",
   description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
   alternates: {
-    canonical: 'https://siddsehgal.com',
+    canonical: 'https://siddharthsehgal.com',
   },
   openGraph: {
     title: "Siddharth Sehgal | Software Developer & Cybersecurity",
     description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
-    url: 'https://siddsehgal.com',
+    url: 'https://siddharthsehgal.com',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {

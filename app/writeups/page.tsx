@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: 'Write-ups | Hack The Box & Bug Bounty CTF Solutions',
   description: 'Detailed write-ups and CTF solutions from Hack The Box machines and bug bounty challenges. Learn penetration testing, web exploitation, and cybersecurity techniques.',
   alternates: {
-    canonical: 'https://siddsehgal.com/writeups',
+    canonical: 'https://siddharthsehgal.com/writeups',
   },
   openGraph: {
     title: 'Write-ups | Hack The Box & Bug Bounty CTF Solutions',
     description: 'Detailed write-ups and CTF solutions from Hack The Box machines and bug bounty challenges. Learn penetration testing, web exploitation, and cybersecurity techniques.',
-    url: 'https://siddsehgal.com/writeups',
+    url: 'https://siddharthsehgal.com/writeups',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {

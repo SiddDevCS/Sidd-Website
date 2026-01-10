@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     apple: "/favicon.png"
   },
   manifest: "/manifest.json",
-  metadataBase: new URL('https://siddsehgal.com'),
+  metadataBase: new URL('https://siddharthsehgal.com'),
   openGraph: {
     title: "Siddharth Sehgal | Software Developer & Cybersecurity",
     description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
-    url: 'https://siddsehgal.com',
+    url: 'https://siddharthsehgal.com',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code', // You'll need to add your verification code here
   },
   alternates: {
-    canonical: 'https://siddsehgal.com',
+    canonical: 'https://siddharthsehgal.com',
   },
 };
 
@@ -104,8 +104,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Siddharth Sehgal",
-    "url": "https://siddsehgal.com",
-    "image": "https://siddsehgal.com/images/Sidd1.webp",
+    "url": "https://siddharthsehgal.com",
+    "image": "https://siddharthsehgal.com/images/Sidd1.webp",
     "sameAs": [
       "https://www.linkedin.com/in/siddsehgal/",
       "https://github.com/SiddDevCS",
@@ -120,14 +120,14 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Siddharth Sehgal's Portfolio",
-    "url": "https://siddsehgal.com",
+    "url": "https://siddharthsehgal.com",
     "author": {
       "@type": "Person",
       "name": "Siddharth Sehgal"
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://siddsehgal.com/writeups?q={search_term_string}",
+      "target": "https://siddharthsehgal.com/writeups?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

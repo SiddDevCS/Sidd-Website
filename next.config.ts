@@ -30,6 +30,32 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: false,
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'siddsehgal.com',
+          },
+        ],
+        destination: 'https://siddharthsehgal.com/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.siddsehgal.com',
+          },
+        ],
+        destination: 'https://siddharthsehgal.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withBundleAnalyzer(nextConfig);

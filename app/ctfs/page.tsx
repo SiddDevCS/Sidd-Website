@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://siddsehgal.com'),
+  metadataBase: new URL('https://siddharthsehgal.com'),
   openGraph: {
     title: 'CTF Competitions | Siddharth Sehgal',
     description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
-    url: 'https://siddsehgal.com/ctfs',
+    url: 'https://siddharthsehgal.com/ctfs',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://siddsehgal.com/ctfs',
+    canonical: 'https://siddharthsehgal.com/ctfs',
   },
 };
 
@@ -228,7 +228,7 @@ export default function CTFs() {
     "author": {
       "@type": "Person",
       "name": "Siddharth Sehgal",
-      "url": "https://siddsehgal.com"
+      "url": "https://siddharthsehgal.com"
     },
     "mainEntity": {
       "@type": "ItemList",

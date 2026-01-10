@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: 'Certifications | CompTIA Security+ & eJPT',
   description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT (eLearnSecurity Junior Penetration Tester) certification.',
   alternates: {
-    canonical: 'https://siddsehgal.com/certifications',
+    canonical: 'https://siddharthsehgal.com/certifications',
   },
   openGraph: {
     title: 'Certifications | CompTIA Security+ & eJPT',
     description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT (eLearnSecurity Junior Penetration Tester) certification.',
-    url: 'https://siddsehgal.com/certifications',
+    url: 'https://siddharthsehgal.com/certifications',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {

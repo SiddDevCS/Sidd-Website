@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllWriteUps } from './data/writeups'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://siddsehgal.com'
+  const baseUrl = 'https://siddharthsehgal.com'
   
   // Get all writeups for dynamic routes
   const writeups = getAllWriteUps()

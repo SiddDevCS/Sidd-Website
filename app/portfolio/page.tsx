@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     'View Siddharth Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
   alternates: {
-    canonical: 'https://siddsehgal.com/portfolio',
+    canonical: 'https://siddharthsehgal.com/portfolio',
   },
   openGraph: {
     title: 'Portfolio | Siddharth Sehgal',
     description:
       'View Siddharth Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
-    url: 'https://siddsehgal.com/portfolio',
+    url: 'https://siddharthsehgal.com/portfolio',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: 'My Journey | From Game Dev to Cybersecurity',
   description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, CTF competitions, and professional experience at BreachLock.',
   alternates: {
-    canonical: 'https://siddsehgal.com/journey',
+    canonical: 'https://siddharthsehgal.com/journey',
   },
   openGraph: {
     title: 'My Journey | From Game Dev to Cybersecurity',
     description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, CTF competitions, and professional experience at BreachLock.',
-    url: 'https://siddsehgal.com/journey',
+    url: 'https://siddharthsehgal.com/journey',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {

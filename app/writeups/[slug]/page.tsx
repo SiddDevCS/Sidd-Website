@@ -31,12 +31,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: writeup.description,
     keywords: writeup.tags,
     alternates: {
-      canonical: `https://siddsehgal.com/writeups/${slug}`,
+      canonical: `https://siddharthsehgal.com/writeups/${slug}`,
     },
     openGraph: {
       title: `${writeup.title} Write-up | Siddharth Sehgal`,
       description: writeup.description,
-      url: `https://siddsehgal.com/writeups/${slug}`,
+      url: `https://siddharthsehgal.com/writeups/${slug}`,
       siteName: "Siddharth Sehgal's Portfolio",
       type: 'article',
       publishedTime: writeup.date,
@@ -109,18 +109,18 @@ export default async function WriteUpPage({ params }: { params: Promise<{ slug: 
     "author": {
       "@type": "Person",
       "name": "Siddharth Sehgal",
-      "url": "https://siddsehgal.com"
+      "url": "https://siddharthsehgal.com"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Siddharth Sehgal's Portfolio",
-      "url": "https://siddsehgal.com"
+      "url": "https://siddharthsehgal.com"
     },
     "datePublished": writeup.date,
     "dateModified": writeup.date,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://siddsehgal.com/writeups/${writeup.slug}`
+      "@id": `https://siddharthsehgal.com/writeups/${writeup.slug}`
     },
     "keywords": writeup.tags.join(", "),
     "articleSection": writeup.category,

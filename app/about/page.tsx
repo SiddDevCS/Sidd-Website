@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'About Me | Siddharth Sehgal',
   description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
   alternates: {
-    canonical: 'https://siddsehgal.com/about',
+    canonical: 'https://siddharthsehgal.com/about',
   },
   openGraph: {
     title: 'About Me | Siddharth Sehgal',
     description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
-    url: 'https://siddsehgal.com/about',
+    url: 'https://siddharthsehgal.com/about',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {

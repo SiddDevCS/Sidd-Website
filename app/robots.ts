@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/_next/', '/admin/'],
     },
-    sitemap: 'https://siddsehgal.com/sitemap.xml',
+    sitemap: 'https://siddharthsehgal.com/sitemap.xml',
   }
 } 

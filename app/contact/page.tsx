@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: 'Contact | Siddharth Sehgal',
   description: 'Get in touch with Siddharth Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
   alternates: {
-    canonical: 'https://siddsehgal.com/contact',
+    canonical: 'https://siddharthsehgal.com/contact',
   },
   openGraph: {
     title: 'Contact | Siddharth Sehgal',
     description: 'Get in touch with Siddharth Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
-    url: 'https://siddsehgal.com/contact',
+    url: 'https://siddharthsehgal.com/contact',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
