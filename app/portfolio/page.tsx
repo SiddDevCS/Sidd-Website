@@ -7,10 +7,33 @@ export const metadata: Metadata = {
   title: 'Portfolio | Siddharth Sehgal',
   description:
     'View Siddharth Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
+  alternates: {
+    canonical: 'https://siddsehgal.com/portfolio',
+  },
   openGraph: {
     title: 'Portfolio | Siddharth Sehgal',
     description:
       'View Siddharth Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
+    url: 'https://siddsehgal.com/portfolio',
+    siteName: "Siddharth Sehgal's Portfolio",
+    images: [
+      {
+        url: '/images/Sidd1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Portfolio | Siddharth Sehgal',
+    description:
+      'View Siddharth Sehgal\'s portfolio including projects like TripCraft, StudieBuddie, certifications, and professional experience in cybersecurity and software development.',
+    images: ['/images/Sidd1.webp'],
+    creator: '@SiddDevTech',
   },
 };
 

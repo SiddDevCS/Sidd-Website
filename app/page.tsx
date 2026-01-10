@@ -1,16 +1,41 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+  description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
+  alternates: {
+    canonical: 'https://siddsehgal.com',
+  },
+  openGraph: {
+    title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+    description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
+    url: 'https://siddsehgal.com',
+    siteName: "Siddharth Sehgal's Portfolio",
+    images: [
+      {
+        url: '/images/Sidd1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+    description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
+    images: ['/images/Sidd1.webp'],
+    creator: '@SiddDevTech',
+  },
+};
 
 export default function Home() {
   return (
     <>
-      {/* Preload critical image */}
-      <link
-        rel="preload"
-        href="/images/pfp-sidd/IMG_0411.jpeg"
-        as="image"
-        type="image/jpeg"
-      />
       
       <section className="w-full max-w-xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp">
         {/* Main Content Card */}

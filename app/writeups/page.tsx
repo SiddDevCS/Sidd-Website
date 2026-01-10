@@ -5,11 +5,33 @@ import { getAllWriteUps } from '../data/writeups';
 export const revalidate = 86400; // Revalidate daily
 
 export const metadata: Metadata = {
-  title: 'Write-ups | Siddharth Sehgal',
-  description: 'write-ups and CTF solutions from Hack The Box machines and bug bounty challenges.',
+  title: 'Write-ups | Hack The Box & Bug Bounty CTF Solutions',
+  description: 'Detailed write-ups and CTF solutions from Hack The Box machines and bug bounty challenges. Learn penetration testing, web exploitation, and cybersecurity techniques.',
+  alternates: {
+    canonical: 'https://siddsehgal.com/writeups',
+  },
   openGraph: {
-    title: 'Write-ups | Siddharth Sehgal',
-    description: 'write-ups and CTF solutions from Hack The Box machines and bug bounty challenges.',
+    title: 'Write-ups | Hack The Box & Bug Bounty CTF Solutions',
+    description: 'Detailed write-ups and CTF solutions from Hack The Box machines and bug bounty challenges. Learn penetration testing, web exploitation, and cybersecurity techniques.',
+    url: 'https://siddsehgal.com/writeups',
+    siteName: "Siddharth Sehgal's Portfolio",
+    images: [
+      {
+        url: '/images/Sidd1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Siddharth Sehgal - CTF Write-ups and Cybersecurity Solutions',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Write-ups | Hack The Box & Bug Bounty CTF Solutions',
+    description: 'Detailed write-ups and CTF solutions from Hack The Box machines and bug bounty challenges. Learn penetration testing, web exploitation, and cybersecurity techniques.',
+    images: ['/images/Sidd1.webp'],
+    creator: '@SiddDevTech',
   },
 };
 

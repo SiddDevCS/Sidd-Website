@@ -30,10 +30,35 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${writeup.title} Write-up | Siddharth Sehgal`,
     description: writeup.description,
     keywords: writeup.tags,
+    alternates: {
+      canonical: `https://siddsehgal.com/writeups/${slug}`,
+    },
     openGraph: {
       title: `${writeup.title} Write-up | Siddharth Sehgal`,
       description: writeup.description,
+      url: `https://siddsehgal.com/writeups/${slug}`,
+      siteName: "Siddharth Sehgal's Portfolio",
       type: 'article',
+      publishedTime: writeup.date,
+      modifiedTime: writeup.date,
+      authors: ['Siddharth Sehgal'],
+      tags: writeup.tags,
+      images: [
+        {
+          url: '/images/Sidd1.webp',
+          width: 1200,
+          height: 630,
+          alt: `${writeup.title} Write-up`,
+        },
+      ],
+      locale: 'en_US',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${writeup.title} Write-up | Siddharth Sehgal`,
+      description: writeup.description,
+      images: ['/images/Sidd1.webp'],
+      creator: '@SiddDevTech',
     },
   };
 }

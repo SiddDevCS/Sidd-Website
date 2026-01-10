@@ -3,11 +3,33 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Certifications | Siddharth Sehgal',
-  description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT certification.',
+  title: 'Certifications | CompTIA Security+ & eJPT',
+  description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT (eLearnSecurity Junior Penetration Tester) certification.',
+  alternates: {
+    canonical: 'https://siddsehgal.com/certifications',
+  },
   openGraph: {
-    title: 'Certifications | Siddharth Sehgal',
-    description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT certification.',
+    title: 'Certifications | CompTIA Security+ & eJPT',
+    description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT (eLearnSecurity Junior Penetration Tester) certification.',
+    url: 'https://siddsehgal.com/certifications',
+    siteName: "Siddharth Sehgal's Portfolio",
+    images: [
+      {
+        url: '/images/Sidd1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Siddharth Sehgal - Cybersecurity Certifications',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Certifications | CompTIA Security+ & eJPT',
+    description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT (eLearnSecurity Junior Penetration Tester) certification.',
+    images: ['/images/Sidd1.webp'],
+    creator: '@SiddDevTech',
   },
 };
 

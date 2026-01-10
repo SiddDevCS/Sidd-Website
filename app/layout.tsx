@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 import "./globals.css";
 
 const Navbar = dynamic(() => import("./components/Navbar"), {
@@ -21,8 +22,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Siddharth Sehgal | Portfolio",
-  description: "High School Student passionate about Software Development and Cybersecurity. Experienced in mobile app development, web applications, and AI integration.",
+  title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+  description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
   keywords: [
     "Siddharth Sehgal",
     "Software Development",
@@ -52,15 +53,15 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   metadataBase: new URL('https://siddsehgal.com'),
   openGraph: {
-    title: "Siddharth Sehgal | Portfolio",
-    description: "High School Student passionate about Software Development and Cybersecurity. Experienced in mobile app development, web applications, and AI integration.",
+    title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+    description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
     url: 'https://siddsehgal.com',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
-        url: '/images/Sidd1.webp', // Updated to use existing optimized image
-        width: 128,
-        height: 128,
+        url: '/images/Sidd1.webp',
+        width: 1200,
+        height: 630,
         alt: 'Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast',
       },
     ],
@@ -69,9 +70,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Siddharth Sehgal | Portfolio",
-    description: "High School Student passionate about Software Development and Cybersecurity. Experienced in mobile app development, web applications, and AI integration.",
-    images: ['/images/Sidd1.webp'], // Updated to use existing optimized image
+    title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+    description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
+    images: ['/images/Sidd1.webp'],
     creator: '@SiddDevTech',
   },
   robots: {
@@ -98,9 +99,52 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Structured data for Organization and Website
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Siddharth Sehgal",
+    "url": "https://siddsehgal.com",
+    "image": "https://siddsehgal.com/images/Sidd1.webp",
+    "sameAs": [
+      "https://www.linkedin.com/in/siddsehgal/",
+      "https://github.com/SiddDevCS",
+      "https://www.youtube.com/@SiddDevTech",
+      "https://medium.com/@siddnative"
+    ],
+    "jobTitle": "Software Developer & Cybersecurity Enthusiast",
+    "description": "Software Developer and Cybersecurity Enthusiast. Experienced in mobile app development, web applications, AI integration, and cybersecurity."
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Siddharth Sehgal's Portfolio",
+    "url": "https://siddsehgal.com",
+    "author": {
+      "@type": "Person",
+      "name": "Siddharth Sehgal"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://siddsehgal.com/writeups?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-neutral-200 relative overflow-x-hidden selection:bg-blue-900/30 selection:text-blue-200`}>
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         {/* Optimized Static Background */}
         <div aria-hidden="true" className="fixed inset-0 -z-10">
           {/* Single static gradient background */}

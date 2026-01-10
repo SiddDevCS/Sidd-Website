@@ -4,9 +4,31 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About Me | Siddharth Sehgal',
   description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
+  alternates: {
+    canonical: 'https://siddsehgal.com/about',
+  },
   openGraph: {
     title: 'About Me | Siddharth Sehgal',
     description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
+    url: 'https://siddsehgal.com/about',
+    siteName: "Siddharth Sehgal's Portfolio",
+    images: [
+      {
+        url: '/images/Sidd1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Me | Siddharth Sehgal',
+    description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
+    images: ['/images/Sidd1.webp'],
+    creator: '@SiddDevTech',
   },
 };
 

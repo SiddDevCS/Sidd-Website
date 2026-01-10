@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'CTF Competitions | Sidd Sehgal',
+  title: 'CTF Competitions | Siddharth Sehgal',
   description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025. Track my progress and achievements in cybersecurity challenges.',
   keywords: [
     'CTF',
@@ -256,7 +257,8 @@ export default function CTFs() {
 
   return (
     <>
-      <script
+      <Script
+        id="ctf-structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />

@@ -1,7 +1,11 @@
 import { MetadataRoute } from 'next'
+import { getAllWriteUps } from './data/writeups'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://siddsehgal.com'
+  
+  // Get all writeups for dynamic routes
+  const writeups = getAllWriteUps()
   
   // Static pages
   const staticPages = [
@@ -23,7 +27,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly' as const,
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/portfolio`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/writeups`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/ctfs`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/certifications`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/journey`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
   ]
 
-  return staticPages
+  // Dynamic writeup pages
+  const writeupPages = writeups.map((writeup) => ({
+    url: `${baseUrl}/writeups/${writeup.slug}`,
+    lastModified: new Date(writeup.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...writeupPages]
 } 

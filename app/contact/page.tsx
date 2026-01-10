@@ -5,9 +5,31 @@ import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 export const metadata: Metadata = {
   title: 'Contact | Siddharth Sehgal',
   description: 'Get in touch with Siddharth Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
+  alternates: {
+    canonical: 'https://siddsehgal.com/contact',
+  },
   openGraph: {
     title: 'Contact | Siddharth Sehgal',
     description: 'Get in touch with Siddharth Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
+    url: 'https://siddsehgal.com/contact',
+    siteName: "Siddharth Sehgal's Portfolio",
+    images: [
+      {
+        url: '/images/Sidd1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact | Siddharth Sehgal',
+    description: 'Get in touch with Siddharth Sehgal. Reach out for collaboration opportunities, project inquiries, or just to connect.',
+    images: ['/images/Sidd1.webp'],
+    creator: '@SiddDevTech',
   },
 };
 
