@@ -6,10 +6,12 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'CTF Competitions | Siddharth Sehgal',
-  description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025. Track my progress and achievements in cybersecurity challenges.',
+  description: 'My journey through Capture The Flag competitions including picoCTF 2026 (CyLab), PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
   keywords: [
     'CTF',
     'Capture The Flag',
+    'picoCTF 2026',
+    'CyLab Security Academy',
     'PicoCTF Mini',
     'PicoCTF 2025',
     'Hack The System',
@@ -41,12 +43,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://siddharthsehgal.com'),
   openGraph: {
     title: 'CTF Competitions | Siddharth Sehgal',
-    description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
+    description: 'My journey through Capture The Flag competitions including picoCTF 2026 (CyLab), PicoCTF Mini, and more.',
     url: 'https://siddharthsehgal.com/ctfs',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
-        url: '/images/ctf-images/stats-sidddev-pico.png',
+        url: '/pico-2026-imgs/pico-26-1.png',
         width: 600,
         height: 400,
         alt: 'Siddharth Sehgal CTF Statistics and Achievements',
@@ -58,8 +60,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CTF Competitions | Siddharth Sehgal',
-    description: 'My journey through Capture The Flag competitions including PicoCTF Mini, PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.',
-    images: ['/images/ctf-images/stats-sidddev-pico.png'],
+    description: 'My journey through Capture The Flag competitions including picoCTF 2026 (CyLab), PicoCTF Mini, and more.',
+    images: ['/pico-2026-imgs/pico-26-1.png'],
     creator: '@SiddDevTech',
   },
   robots: {
@@ -78,14 +80,24 @@ export const metadata: Metadata = {
   },
 };
 
+interface CategoryProgress {
+  name: string;
+  solved: number;
+  total: number;
+}
+
 interface CTFEntry {
   id: number;
   name: string;
+  subtitle?: string;
   date: string;
   teamName: string;
   teamLink: string;
   placement: string;
   totalTeams: number;
+  competitorUnit?: 'teams' | 'players';
+  score?: string;
+  solves?: number;
   description: string;
   images: {
     src: string;
@@ -94,10 +106,59 @@ interface CTFEntry {
     height: number;
   }[];
   categories: string[];
+  categoryProgress?: CategoryProgress[];
   solo: boolean;
 }
 
 const ctfData: CTFEntry[] = [
+  {
+    id: 6,
+    name: 'picoCTF 2026',
+    subtitle: 'CyLab Security Academy',
+    date: 'March 2026',
+    teamName: 'Solo',
+    teamLink: 'https://learn.cylabacademy.org/events/79/scoreboards?page=10',
+    placement: '495th',
+    totalTeams: 8747,
+    competitorUnit: 'players',
+    score: '11,800 / 14,500',
+    solves: 63,
+    description:
+      'Solo run in picoCTF 2026 on the CyLab Security Academy platform (the evolution of Carnegie Mellon\'s PicoCTF). Over ten competition days I earned 11,800 points from 63 solves, placing 495th globally out of 8,747 players. Strongest categories were General Skills (17/17) and Forensics (8/8); I also cleared all Blockchain challenges (4/4) and nearly completed Binary Exploitation (7/8) and Cryptography (11/12).',
+    images: [
+      {
+        src: '/pico-2026-imgs/pico-26-1.png',
+        alt: 'picoCTF 2026 final rank and category progress on CyLab Security Academy',
+        width: 1200,
+        height: 800,
+      },
+      {
+        src: '/pico-2026-imgs/pico-26-2.png',
+        alt: 'picoCTF 2026 score progression and solved challenges',
+        width: 1200,
+        height: 800,
+      },
+    ],
+    categories: [
+      'Binary Exploitation',
+      'Blockchain',
+      'Cryptography',
+      'Forensics',
+      'General Skills',
+      'Reverse Engineering',
+      'Web Exploitation',
+    ],
+    categoryProgress: [
+      { name: 'Binary Exploitation', solved: 7, total: 8 },
+      { name: 'Blockchain', solved: 4, total: 4 },
+      { name: 'Cryptography', solved: 11, total: 12 },
+      { name: 'Forensics', solved: 8, total: 8 },
+      { name: 'General Skills', solved: 17, total: 17 },
+      { name: 'Reverse Engineering', solved: 8, total: 11 },
+      { name: 'Web Exploitation', solved: 8, total: 10 },
+    ],
+    solo: true,
+  },
   {
     id: 5,
     name: 'PicoCTF Mini',
@@ -219,12 +280,15 @@ const ctfData: CTFEntry[] = [
 ];
 
 export default function CTFs() {
+  const soloCount = ctfData.filter((c) => c.solo).length;
+  const totalCompetitors = ctfData.reduce((sum, c) => sum + c.totalTeams, 0);
+
   // Structured data for SEO
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "CTF Competitions | Siddharth Sehgal",
-    "description": "My journey through Capture The Flag competitions including PicoCTF 2025, Hack The System Bug Bounty CTF, L3akCTF 2025, and DownUnderCTF 2025.",
+    "description": "My journey through Capture The Flag competitions including picoCTF 2026, PicoCTF Mini, PicoCTF 2025, and more.",
     "author": {
       "@type": "Person",
       "name": "Siddharth Sehgal",
@@ -287,7 +351,7 @@ export default function CTFs() {
                 {/* Header */}
                 <header className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                   <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
+                    <div className="flex items-center gap-3 mb-2 flex-wrap">
                       <h2 className="text-2xl font-bold text-blue-400">{ctf.name}</h2>
                       {ctf.solo && (
                         <span className="px-3 py-1 text-xs rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20">
@@ -295,6 +359,9 @@ export default function CTFs() {
                         </span>
                       )}
                     </div>
+                    {ctf.subtitle && (
+                      <p className="text-sm text-cyan-400/80 mb-1">{ctf.subtitle}</p>
+                    )}
                     <time className="text-neutral-400 text-sm" dateTime={ctf.date}>{ctf.date}</time>
                   </div>
                   
@@ -303,25 +370,42 @@ export default function CTFs() {
                       {ctf.placement}
                     </div>
                     <div className="text-neutral-500 text-sm">
-                      out of {ctf.totalTeams.toLocaleString()} teams
+                      out of {ctf.totalTeams.toLocaleString()}{' '}
+                      {ctf.competitorUnit === 'players' ? 'players' : 'teams'}
                     </div>
+                    {ctf.score && (
+                      <div className="text-neutral-400 text-sm mt-1 font-mono">
+                        {ctf.score} pts
+                      </div>
+                    )}
+                    {ctf.solves !== undefined && (
+                      <div className="text-neutral-500 text-xs mt-1">
+                        {ctf.solves} solves
+                      </div>
+                    )}
                   </div>
                 </header>
 
-                {/* Team Info */}
+                {/* Team / scoreboard */}
                 <div className="mb-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-neutral-400">Team:</span>
+                  <div className="flex items-center gap-2 mb-2 flex-wrap">
+                    <span className="text-neutral-400">
+                      {ctf.teamName === 'Solo' && ctf.competitorUnit === 'players'
+                        ? 'Scoreboard:'
+                        : 'Team:'}
+                    </span>
                     <Link 
                       href={ctf.teamLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
                     >
-                      {ctf.teamName}
+                      {ctf.teamName === 'Solo' && ctf.competitorUnit === 'players'
+                        ? 'CyLab scoreboard'
+                        : ctf.teamName}
                     </Link>
-                    {ctf.solo && (
-                      <span className="text-neutral-500 text-sm">(Solo Team)</span>
+                    {ctf.solo && ctf.teamName !== 'Solo' && (
+                      <span className="text-neutral-500 text-sm">(Solo)</span>
                     )}
                   </div>
                 </div>
@@ -333,9 +417,47 @@ export default function CTFs() {
                   </p>
                 </div>
 
+                {/* Category progress */}
+                {ctf.categoryProgress && ctf.categoryProgress.length > 0 && (
+                  <div className="mb-6">
+                    <h3 className="text-lg font-semibold text-white mb-3">Category breakdown</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {ctf.categoryProgress.map((cat) => {
+                        const pct = Math.round((cat.solved / cat.total) * 100);
+                        const complete = cat.solved === cat.total;
+                        return (
+                          <div
+                            key={cat.name}
+                            className="rounded-xl border border-white/[0.06] bg-neutral-950/50 p-4"
+                          >
+                            <div className="flex justify-between items-center mb-2">
+                              <span className="text-sm text-neutral-300">{cat.name}</span>
+                              <span
+                                className={`text-xs font-mono ${
+                                  complete ? 'text-emerald-400' : 'text-neutral-500'
+                                }`}
+                              >
+                                {cat.solved}/{cat.total}
+                              </span>
+                            </div>
+                            <div className="h-1.5 rounded-full bg-neutral-800 overflow-hidden">
+                              <div
+                                className={`h-full rounded-full transition-all ${
+                                  complete ? 'bg-emerald-500/80' : 'bg-blue-500/70'
+                                }`}
+                                style={{ width: `${pct}%` }}
+                              />
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
                 {/* Categories */}
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-white mb-3">Categories Explored</h3>
+                  <h3 className="text-lg font-semibold text-white mb-3">Categories explored</h3>
                   <div className="flex flex-wrap gap-2">
                     {ctf.categories.map((category, catIndex) => (
                       <span 
@@ -381,15 +503,17 @@ export default function CTFs() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="surface-elevated rounded-xl p-6">
                 <div className="text-3xl font-bold text-blue-400 mb-2">{ctfData.length}</div>
-                <div className="text-neutral-400">CTFs Completed</div>
+                <div className="text-neutral-400">CTFs completed</div>
               </div>
               <div className="surface-elevated rounded-xl p-6">
-                <div className="text-3xl font-bold text-green-400 mb-2">4</div>
-                <div className="text-neutral-400">Solo Competitions</div>
+                <div className="text-3xl font-bold text-green-400 mb-2">{soloCount}</div>
+                <div className="text-neutral-400">Solo competitions</div>
               </div>
               <div className="surface-elevated rounded-xl p-6">
-                <div className="text-3xl font-bold text-purple-400 mb-2">17,979</div>
-                <div className="text-neutral-400">Total Teams Competed Against</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">
+                  {totalCompetitors.toLocaleString()}
+                </div>
+                <div className="text-neutral-400">Total competitors faced</div>
               </div>
             </div>
           </footer>

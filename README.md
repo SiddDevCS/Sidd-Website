@@ -10,7 +10,7 @@ Welcome to my personal website and portfolio! This site showcases my journey as 
 
 This website is a central hub for:
 - **Portfolio:** Explore my featured projects, including AI-powered mobile apps and web applications.
-- **CTF Competitions:** Track my progress and achievements in cybersecurity competitions like PicoCTF, Hack The System Bug Bounty CTF, L3akCTF, and DownUnderCTF.
+- **CTF Competitions:** Track my progress and achievements in cybersecurity competitions like picoCTF 2026 (CyLab), PicoCTF Mini, Hack The System Bug Bounty CTF, L3akCTF, and DownUnderCTF.
 - **Write-ups:** Read detailed walkthroughs of Hack The Box machines, bug bounty challenges, and more (some write-ups are password protected).
 - **About & Experience:** Learn about my background, skills, and experience in tech.
 - **Contact:** Get in touch or connect via social media.

@@ -24,6 +24,7 @@ export default function SecuritySection() {
             <Badge>HTB Season 8 & 9</Badge>
             <Badge variant="accent">Security+</Badge>
             <Badge variant="accent">eJPT</Badge>
+            <Badge variant="success">picoCTF 2026 #495</Badge>
             <Badge variant="success">PicoMini 2nd</Badge>
           </div>
           <div className="flex gap-4">

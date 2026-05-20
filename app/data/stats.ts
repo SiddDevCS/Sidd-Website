@@ -8,7 +8,7 @@ export const heroStats: Stat[] = [
   { value: "2", label: "Apps on App Store", detail: "TripCraft & StudieBuddie" },
   { value: "17th", label: "HTB NL Season 9", detail: "Netherlands ranking" },
   { value: "2", label: "Security Certs", detail: "Security+ & eJPT" },
-  { value: "8+", label: "Published Write-ups", detail: "HTB & CTF solutions" },
+  { value: "495th", label: "picoCTF 2026", detail: "Solo · 8,747 players" },
 ];
 
 export const currentlyBuilding = {

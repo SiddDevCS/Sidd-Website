@@ -385,6 +385,22 @@ export default function Journey() {
             </div>
             
             <div className="space-y-4 text-neutral-300 leading-relaxed">
+              <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
+                <p className="text-amber-300 font-medium mb-2">picoCTF 2026 — Solo, #495 / 8,747</p>
+                <p className="text-neutral-300 text-sm">
+                  Competed individually in <span className="text-amber-400 font-medium">picoCTF 2026</span> on the{' '}
+                  <Link
+                    href="https://learn.cylabacademy.org/events/79/scoreboards?page=10"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-400 hover:text-amber-300 underline"
+                  >
+                    CyLab Security Academy
+                  </Link>{' '}
+                  platform (Mar 9–19, 2026). Finished with <span className="text-amber-400 font-medium">11,800 points</span>,{' '}
+                  <span className="text-amber-400 font-medium">63 solves</span>, including perfect runs in General Skills (17/17) and Forensics (8/8).
+                </p>
+              </div>
               <p>
                 Continuing to grow, learn, and build. The journey is just getting started!
               </p>
