@@ -1,107 +1,106 @@
-import React from 'react';
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
+import Section from "@/app/components/ui/Section";
+import PageHeader from "@/app/components/ui/PageHeader";
+import Badge from "@/app/components/ui/Badge";
 
 export const metadata: Metadata = {
-  title: 'About Me | Siddharth Sehgal',
-  description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
-  alternates: {
-    canonical: 'https://siddharthsehgal.com/about',
-  },
+  title: "About | Siddharth Sehgal",
+  description:
+    "Siddharth Sehgal — incoming HvA student, software developer, and cybersecurity enthusiast building AI apps and documenting offensive security research.",
+  alternates: { canonical: "https://siddharthsehgal.com/about" },
   openGraph: {
-    title: 'About Me | Siddharth Sehgal',
-    description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
-    url: 'https://siddharthsehgal.com/about',
-    siteName: "Siddharth Sehgal's Portfolio",
-    images: [
-      {
-        url: '/images/Sidd1.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
+    title: "About | Siddharth Sehgal",
+    description: "Developer, security researcher, and builder of AI-powered products.",
+    url: "https://siddharthsehgal.com/about",
+    siteName: "Siddharth Sehgal",
+    images: [{ url: "/images/Sidd1.webp", width: 1200, height: 630, alt: "About Siddharth" }],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'About Me | Siddharth Sehgal',
-    description: 'Learn about Siddharth Sehgal - A passionate developer focused on mobile apps, web development, and cybersecurity. Discover my journey in tech and creative pursuits.',
-    images: ['/images/Sidd1.webp'],
-    creator: '@SiddDevTech',
+    card: "summary_large_image",
+    title: "About | Siddharth Sehgal",
+    description: "Developer, security researcher, and builder of AI-powered products.",
+    images: ["/images/Sidd1.webp"],
+    creator: "@SiddDevTech",
   },
 };
 
-export default function About() {
-  return (
-    <section className="w-full max-w-3xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp">
-      <div className="w-full glass-dark rounded-3xl shadow-2xl p-8 md:p-12">
-        <h1 className="text-4xl font-bold mb-10 text-center text-gradient">About Me</h1>
-        
-        {/* Introduction */}
-        <div className="glass-card rounded-xl p-6 mb-8 hover:border-blue-500/20 transition-colors">
-          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Hey, I&apos;m Siddharth!</h2>
-          <p className="text-neutral-400 leading-relaxed">
-            I&apos;m really into tech, creativity, and figuring out how things work. 
-            I remember making my first game with Unity Game Engine in 2024, and I&apos;ve been hooked to developing ever since.
-            In 2025, I discovered the world of mobile app development and I&apos;ve been building apps ever since.
-          </p>
-        </div>
+const focusAreas = [
+  {
+    title: "Product engineering",
+    body: "I ship iOS apps to the App Store — TripCraft and StudieBuddie — with real users, AI integration, and production infrastructure.",
+  },
+  {
+    title: "Offensive security",
+    body: "CTFs, Hack The Box seasons, and certifications (Security+, eJPT) drive how I think about systems: break, document, harden.",
+  },
+  {
+    title: "Creative craft",
+    body: "Photography and music production (Logic Pro) keep my problem-solving visual and iterative — the same mindset I bring to code.",
+  },
+];
 
-        {/* Tech & Development */}
-        <div className="glass-card rounded-xl p-6 mb-8 hover:border-blue-500/20 transition-colors">
-          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Tech & Development</h2>
-          <div className="space-y-4 text-neutral-400 leading-relaxed">
+const philosophy = [
+  "Learn by building, not watching.",
+  "Document everything worth breaking.",
+  "Performance and clarity are features.",
+  "Security is a design constraint, not an afterthought.",
+];
+
+export default function AboutPage() {
+  return (
+    <Section spacing="default" className="pt-24">
+      <PageHeader
+        label="About"
+        title="Engineer at the intersection of products & security"
+        description="Incoming Computer Science student at HvA, Amsterdam. Currently interning at BreachLock while shipping apps and publishing security research."
+      />
+
+      <div className="grid lg:grid-cols-3 gap-6 mb-16">
+        {focusAreas.map((area) => (
+          <div key={area.title} className="surface-interactive rounded-2xl p-6 md:p-8">
+            <h2 className="text-lg font-semibold text-white mb-3">{area.title}</h2>
+            <p className="text-sm text-neutral-500 leading-relaxed">{area.body}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-8">
+        <div className="surface-elevated rounded-2xl p-8">
+          <p className="text-label mb-4">Origin story</p>
+          <div className="space-y-4 text-neutral-400 text-sm leading-relaxed">
             <p>
-              I love experimenting with new tech, whether that&apos;s diving into a new programming language, 
-              building apps, or just playing around with different tools to see what I can create. I&apos;ve built 
-              a few apps like TripCraft and StudieBuddie, which are focused on solving real problems in 
-              simple ways.
-              <br />
-              <br />
-              I&apos;m also really into cybersecurity, and I regularly do CTFs (Capture the Flag challenges), 
-              learn about different types of vulnerabilities, and try to understand how systems can be broken. And 
-              more importantly, how to protect them.
+              I started with Python — interactive sites, Pong with Pygame — then moved into
+              Unity and C# game development in 2024. That foundation in logic and systems
+              design led me to mobile apps in 2025, and cybersecurity through picoCTF.
+            </p>
+            <p>
+              Today I balance App Store products, a BreachLock internship, Hack The Box
+              competition, and this site — a single place for my engineering identity.
             </p>
           </div>
         </div>
 
-        {/* Creative Side */}
-        <div className="glass-card rounded-xl p-6 mb-8 hover:border-blue-500/20 transition-colors">
-          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">Creative Side</h2>
-          <p className="text-neutral-400 mb-4 leading-relaxed">
-            Outside of tech, I also enjoy being creative in other ways:
-          </p>
-          <ul className="space-y-3">
-            <li className="flex items-start space-x-3 text-neutral-400">
-              <span className="text-blue-400 mt-1">→</span>
-              <span className="leading-relaxed">
-                <span className="text-blue-400/90 font-medium">Photography</span> – I like capturing cool moments 
-                and perspectives, telling stories through visuals.
-              </span>
-            </li>
-            <li className="flex items-start space-x-3 text-neutral-400">
-              <span className="text-blue-400 mt-1">→</span>
-              <span className="leading-relaxed">
-                <span className="text-blue-400/90 font-medium">Music Production</span> – I use Logic Pro to make 
-                beats and experiment with sounds. It&apos;s my creative outlet and a fun way to switch things up from coding.
-              </span>
-            </li>
+        <div className="surface-elevated rounded-2xl p-8">
+          <p className="text-label mb-4">Operating principles</p>
+          <ul className="space-y-4">
+            {philosophy.map((line) => (
+              <li key={line} className="flex gap-3 text-sm text-neutral-400">
+                <span className="text-blue-400 font-mono shrink-0">01</span>
+                {line}
+              </li>
+            ))}
           </ul>
+          <div className="flex flex-wrap gap-2 mt-8">
+            <Badge>Swift / SwiftUI</Badge>
+            <Badge>Next.js</Badge>
+            <Badge>Python</Badge>
+            <Badge>Penetration Testing</Badge>
+            <Badge>AI / LLMs</Badge>
+          </div>
         </div>
-
-        {/* How I Work (not neccesary)
-        <div className="glass-card rounded-xl p-6 hover:border-blue-500/20 transition-colors">
-          <h2 className="text-xl font-semibold mb-4 text-gradient-blue">How I Work</h2>
-          <p className="text-neutral-400 leading-relaxed">
-            I&apos;m a big believer in learning by doing. Whether I&apos;m working on an app, solving a CTF, editing 
-            a photo, or building a beat, I like to just jump in, try things out, and figure stuff out along 
-            the way. That mix of tech and creativity helps me think differently and come up with ideas that 
-            feel both practical and personal.
-          </p>
-        </div>
-        */}
       </div>
-    </section>
+    </Section>
   );
-} 
+}

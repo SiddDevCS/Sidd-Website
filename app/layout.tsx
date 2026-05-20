@@ -2,14 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import dynamic from 'next/dynamic';
-import Script from 'next/script';
+import Script from "next/script";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
+import SiteBackground from "@/app/components/layout/SiteBackground";
+import ScrollProgress from "@/app/components/layout/ScrollProgress";
 import "./globals.css";
-
-const Navbar = dynamic(() => import("./components/Navbar"), {
-  loading: () => <div className="h-16 bg-black/80 backdrop-blur-sm" />,
-  ssr: true
-});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +21,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Siddharth Sehgal | Software Developer & Cybersecurity",
-  description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
+  description:
+    "Portfolio of Siddharth Sehgal — software developer, cybersecurity enthusiast, and incoming HvA student. Mobile apps, CTF write-ups, and security research.",
   keywords: [
     "Siddharth Sehgal",
     "Software Development",
@@ -33,7 +32,8 @@ export const metadata: Metadata = {
     "AI Integration",
     "TripCraft",
     "StudieBuddie",
-    "iOS Development",
+    "Hack The Box",
+    "CTF",
     "Next.js",
     "React",
     "TypeScript",
@@ -48,32 +48,34 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.png",
-    apple: "/favicon.png"
+    apple: "/favicon.png",
   },
   manifest: "/manifest.json",
-  metadataBase: new URL('https://siddharthsehgal.com'),
+  metadataBase: new URL("https://siddharthsehgal.com"),
   openGraph: {
     title: "Siddharth Sehgal | Software Developer & Cybersecurity",
-    description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
-    url: 'https://siddharthsehgal.com',
-    siteName: "Siddharth Sehgal's Portfolio",
+    description:
+      "Portfolio of Siddharth Sehgal — software developer, cybersecurity enthusiast, and incoming HvA student.",
+    url: "https://siddharthsehgal.com",
+    siteName: "Siddharth Sehgal",
     images: [
       {
-        url: '/images/Sidd1.webp',
+        url: "/images/Sidd1.webp",
         width: 1200,
         height: 630,
-        alt: 'Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast',
+        alt: "Siddharth Sehgal — Software Developer and Cybersecurity Enthusiast",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: "Siddharth Sehgal | Software Developer & Cybersecurity",
-    description: "Portfolio of Siddharth Sehgal - Software Developer and Cybersecurity Enthusiast. Mobile apps, web development, CTF competitions, and security certifications.",
-    images: ['/images/Sidd1.webp'],
-    creator: '@SiddDevTech',
+    description:
+      "Portfolio of Siddharth Sehgal — software developer, cybersecurity enthusiast, and incoming HvA student.",
+    images: ["/images/Sidd1.webp"],
+    creator: "@SiddDevTech",
   },
   robots: {
     index: true,
@@ -81,16 +83,13 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code', // You'll need to add your verification code here
-  },
   alternates: {
-    canonical: 'https://siddharthsehgal.com',
+    canonical: "https://siddharthsehgal.com",
   },
 };
 
@@ -99,42 +98,44 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Structured data for Organization and Website
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Siddharth Sehgal",
-    "url": "https://siddharthsehgal.com",
-    "image": "https://siddharthsehgal.com/images/Sidd1.webp",
-    "sameAs": [
+    name: "Siddharth Sehgal",
+    url: "https://siddharthsehgal.com",
+    image: "https://siddharthsehgal.com/images/Sidd1.webp",
+    sameAs: [
       "https://www.linkedin.com/in/siddsehgal/",
       "https://github.com/SiddDevCS",
       "https://www.youtube.com/@SiddDevTech",
-      "https://medium.com/@siddnative"
+      "https://medium.com/@siddnative",
     ],
-    "jobTitle": "Software Developer & Cybersecurity Enthusiast",
-    "description": "Software Developer and Cybersecurity Enthusiast. Experienced in mobile app development, web applications, AI integration, and cybersecurity."
+    jobTitle: "Software Developer & Cybersecurity Enthusiast",
+    description:
+      "Software developer and cybersecurity enthusiast. Incoming HvA student. Builds AI-powered mobile apps and documents offensive security research.",
   };
 
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Siddharth Sehgal's Portfolio",
-    "url": "https://siddharthsehgal.com",
-    "author": {
+    name: "Siddharth Sehgal",
+    url: "https://siddharthsehgal.com",
+    author: {
       "@type": "Person",
-      "name": "Siddharth Sehgal"
+      name: "Siddharth Sehgal",
     },
-    "potentialAction": {
+    potentialAction: {
       "@type": "SearchAction",
-      "target": "https://siddharthsehgal.com/writeups?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+      target: "https://siddharthsehgal.com/writeups?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
   };
 
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-neutral-200 relative overflow-x-hidden selection:bg-blue-900/30 selection:text-blue-200`}>
+    <html lang="en" className="dark">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased min-h-screen flex flex-col`}
+      >
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -145,26 +146,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        {/* Optimized Static Background */}
-        <div aria-hidden="true" className="fixed inset-0 -z-10">
-          {/* Single static gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black via-neutral-900 to-neutral-950" />
-          {/* Subtle accent without heavy animations */}
-          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-blue-950/10 to-transparent opacity-60" />
-        </div>
-
+        <ScrollProgress />
+        <SiteBackground />
         <Navbar />
-
-        {/* Main Content */}
-        <main className="flex flex-col items-center justify-center min-h-screen w-full px-4 py-8" role="main">
+        <main className="flex-1 w-full" role="main">
           {children}
         </main>
-        
-        {/* Footer */}
-        <footer className="text-center py-8 text-neutral-500 text-sm" role="contentinfo">
-          <p>&copy; {new Date().getFullYear()} Siddharth Sehgal. All rights reserved.</p>
-        </footer>
-        
+        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>

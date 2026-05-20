@@ -2,7 +2,7 @@
 
 Welcome to my personal website and portfolio! This site showcases my journey as a software developer and cybersecurity enthusiast, featuring my projects, CTF (Capture The Flag) achievements, technical write-ups, and more.
 
-**Live Site:** [siddsehgal.vercel.app](https://siddsehgal.vercel.app)
+**Live Site:** [siddharthsehgal.com](https://siddharthsehgal.com) · [Vercel](https://siddsehgal.vercel.app)
 
 --- 
 
@@ -33,7 +33,7 @@ This website is a central hub for:
 ---
 
 ## About Me
-- High school student passionate about software development and cybersecurity
+- Incoming HvA Computer Science student passionate about software development and cybersecurity
 - Experienced in mobile app development, web applications, and AI integration
 - Enjoys learning, building, and sharing knowledge
 

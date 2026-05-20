@@ -262,17 +262,15 @@ export default function CTFs() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <main className="w-full max-w-6xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp px-4">
-        <article className="w-full glass-dark rounded-3xl shadow-2xl p-8 md:p-12">
-          <header>
-            <h1 className="text-4xl font-bold mb-8 text-center text-gradient">
-              CTF Competitions
-            </h1>
-          </header>
-
-          {/* What are CTFs? Section */}
+      <main className="w-full max-w-6xl mx-auto flex flex-col items-center pt-28 pb-20 px-4 sm:px-6">
+        <header className="w-full mb-12 max-w-3xl">
+          <p className="text-label mb-3 text-cyan-400/80">Competition record</p>
+          <h1 className="text-headline text-gradient mb-4">CTF competitions</h1>
+          <p className="text-subhead text-neutral-500">Rankings, teams, and challenge categories across major events.</p>
+        </header>
+        <article className="w-full space-y-8">
           <section className="mb-10">
-            <div className="glass-card rounded-xl p-6 md:p-8 mx-auto max-w-2xl text-center border-l-4 border-blue-500/30">
+            <div className="surface-interactive rounded-2xl p-6 md:p-8 mx-auto max-w-2xl text-center border-l-2 border-blue-500/40">
               <h2 className="text-2xl font-semibold text-blue-400 mb-2">What are CTFs?</h2>
               <p className="text-neutral-300 mb-2">
                 <strong>CTFs</strong> (Capture The Flag) are hacking competitions where you solve challenges to find hidden &quot;flags&quot; and earn points while competing with others.
@@ -283,13 +281,9 @@ export default function CTFs() {
             </div>
           </section>
           
-          <p className="text-lg text-neutral-400 mb-10 text-center">
-            My journey through Capture The Flag competitions - from my first experience to challenging solo competitions
-          </p>
-
-          <section className="space-y-12">
+          <section className="space-y-8">
             {ctfData.map((ctf) => (
-              <article key={ctf.id} className="glass-card rounded-xl p-8 hover:border-blue-500/20 transition-all duration-300">
+              <article key={ctf.id} className="surface-interactive rounded-2xl p-8 md:p-10">
                 {/* Header */}
                 <header className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                   <div className="flex-1">
@@ -385,15 +379,15 @@ export default function CTFs() {
           {/* Footer Stats */}
           <footer className="mt-12 pt-8 border-t border-neutral-800/50">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div className="glass-card rounded-xl p-6">
+              <div className="surface-elevated rounded-xl p-6">
                 <div className="text-3xl font-bold text-blue-400 mb-2">{ctfData.length}</div>
                 <div className="text-neutral-400">CTFs Completed</div>
               </div>
-              <div className="glass-card rounded-xl p-6">
+              <div className="surface-elevated rounded-xl p-6">
                 <div className="text-3xl font-bold text-green-400 mb-2">4</div>
                 <div className="text-neutral-400">Solo Competitions</div>
               </div>
-              <div className="glass-card rounded-xl p-6">
+              <div className="surface-elevated rounded-xl p-6">
                 <div className="text-3xl font-bold text-purple-400 mb-2">17,979</div>
                 <div className="text-neutral-400">Total Teams Competed Against</div>
               </div>

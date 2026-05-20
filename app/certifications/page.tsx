@@ -35,12 +35,16 @@ export const metadata: Metadata = {
 
 export default function Certifications() {
   return (
-    <section className="w-full max-w-4xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp">
-      <div className="w-full glass-dark rounded-3xl shadow-2xl p-8 md:p-12">
-        <h1 className="text-4xl font-bold mb-10 text-center text-gradient">Certifications</h1>
+    <section className="w-full max-w-4xl mx-auto flex flex-col items-center pt-28 pb-20 px-4 sm:px-6">
+      <header className="w-full mb-12 text-center max-w-2xl">
+        <p className="text-label mb-3 text-blue-400/80">Credentials</p>
+        <h1 className="text-headline text-gradient mb-4">Certifications</h1>
+        <p className="text-subhead text-neutral-500">Validated offensive security and foundational knowledge.</p>
+      </header>
+      <div className="w-full space-y-8">
         
         {/* CompTIA Security+ Certificate */}
-        <div className="glass-card rounded-xl p-6 mb-8 hover:border-blue-500/20 transition-colors">
+        <div className="surface-interactive rounded-2xl p-6 md:p-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="flex-shrink-0">
               <div className="relative w-64 h-40 rounded-lg overflow-hidden border border-neutral-700/50">
@@ -54,7 +58,7 @@ export default function Certifications() {
               </div>
             </div>
             <div className="flex-1">
-              <h2 className="text-2xl font-semibold mb-3 text-gradient-blue">CompTIA Security+ ce</h2>
+              <h2 className="text-2xl font-semibold mb-3 text-gradient-accent">CompTIA Security+ ce</h2>
               <p className="text-neutral-400 mb-4 leading-relaxed">
                 Successfully obtained the CompTIA Security+ ce certification, demonstrating foundational knowledge 
                 in cybersecurity concepts, risk management, and security operations. This certification validates 
@@ -76,7 +80,7 @@ export default function Certifications() {
         </div>
 
         {/* eJPT Certificate */}
-        <div className="glass-card rounded-xl p-6 mb-8 hover:border-purple-500/20 transition-colors">
+        <div className="surface-interactive rounded-2xl p-6 md:p-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="flex-shrink-0">
               <div className="relative w-64 h-40 rounded-lg overflow-hidden border border-neutral-700/50">
@@ -90,7 +94,7 @@ export default function Certifications() {
               </div>
             </div>
             <div className="flex-1">
-              <h2 className="text-2xl font-semibold mb-3 text-gradient-purple">eLearnSecurity Junior Penetration Tester (eJPT)</h2>
+              <h2 className="text-2xl font-semibold mb-3 text-white">eLearnSecurity Junior Penetration Tester (eJPT)</h2>
               <p className="text-neutral-400 mb-4 leading-relaxed">
                 Successfully obtained the eJPT certification from INE Security, demonstrating practical penetration testing 
                 skills and hands-on experience with real-world scenarios. This certification validates my expertise in 

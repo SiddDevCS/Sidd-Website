@@ -36,18 +36,21 @@ export const metadata: Metadata = {
 
 export default function Journey() {
   return (
-    <section className="w-full max-w-6xl mx-auto flex flex-col items-center pt-16 pb-16 animate-fadeInUp px-4">
-      <div className="w-full glass-dark rounded-3xl shadow-2xl p-8 md:p-12">
-        <h1 className="text-4xl font-bold mb-4 text-center text-gradient">My Journey</h1>
-        <p className="text-neutral-400 text-center mb-12">
-          From game development to cybersecurity - a timeline of my growth and achievements
+    <section className="w-full max-w-6xl mx-auto flex flex-col items-center pt-28 pb-20 px-4 sm:px-6">
+      <header className="w-full max-w-3xl mb-12 md:mb-16">
+        <p className="text-label mb-3 text-blue-400/80">Timeline</p>
+        <h1 className="text-headline text-gradient mb-4">My journey</h1>
+        <p className="text-subhead text-neutral-500">
+          From game development to cybersecurity — milestones, media, and what I&apos;m building toward.
         </p>
+      </header>
+      <div className="w-full space-y-8">
         
         {/* Journey Cards */}
         <div className="space-y-8">
           
           {/* 2024 - Game Development */}
-          <div className="glass-card rounded-2xl p-8 hover:border-blue-500/30 transition-all duration-300 border-l-4 border-blue-500">
+          <div className="surface-interactive rounded-2xl p-8 border-l-2 border-blue-500/60">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
               <div>
                 <h2 className="text-3xl font-bold text-blue-400 mb-2">2024</h2>
@@ -161,7 +164,7 @@ export default function Journey() {
           </div>
 
           {/* Beginning 2025 - Mobile App Development */}
-          <div className="glass-card rounded-2xl p-8 hover:border-purple-500/30 transition-all duration-300 border-l-4 border-purple-500">
+          <div className="surface-interactive rounded-2xl p-8 border-l-2 border-purple-500/60">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
               <div>
                 <h2 className="text-3xl font-bold text-purple-400 mb-2">Beginning 2025</h2>
@@ -232,7 +235,7 @@ export default function Journey() {
           </div>
 
           {/* Mid 2025 - Certifications & Hack The Box */}
-          <div className="glass-card rounded-2xl p-8 hover:border-cyan-500/30 transition-all duration-300 border-l-4 border-cyan-500">
+          <div className="surface-interactive rounded-2xl p-8 border-l-2 border-cyan-500/60">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
               <div>
                 <h2 className="text-3xl font-bold text-cyan-400 mb-2">Mid 2025</h2>
@@ -323,7 +326,7 @@ export default function Journey() {
           </div>
 
           {/* Late 2025 - Internship & Continued Growth */}
-          <div className="glass-card rounded-2xl p-8 hover:border-green-500/30 transition-all duration-300 border-l-4 border-green-500">
+          <div className="surface-interactive rounded-2xl p-8 border-l-2 border-emerald-500/60">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
               <div>
                 <h2 className="text-3xl font-bold text-green-400 mb-2">Late 2025</h2>
@@ -372,7 +375,7 @@ export default function Journey() {
           </div>
 
           {/* 2026 & Beyond - Future */}
-          <div className="glass-card rounded-2xl p-8 hover:border-yellow-500/30 transition-all duration-300 border-l-4 border-yellow-500 bg-gradient-to-br from-yellow-500/5 to-transparent">
+          <div className="surface-interactive rounded-2xl p-8 border-l-2 border-amber-500/40 bg-gradient-to-br from-amber-500/[0.03] to-transparent">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
               <div>
                 <h2 className="text-3xl font-bold text-yellow-400 mb-2">2026 & Beyond</h2>
