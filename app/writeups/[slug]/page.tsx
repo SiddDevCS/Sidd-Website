@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       tags: writeup.tags,
       images: [
         {
-          url: '/images/Sidd1.webp',
+          url: '/og.png',
           width: 1200,
           height: 630,
           alt: `${writeup.title} Write-up`,
@@ -57,9 +57,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: 'summary_large_image',
       title: `${writeup.title} Write-up | Siddharth Sehgal`,
       description: writeup.description,
-      images: ['/images/Sidd1.webp'],
+      images: ['/og.png'],
       creator: '@SiddDevTech',
     },
+    robots: { index: false, follow: false },
   };
 }
 

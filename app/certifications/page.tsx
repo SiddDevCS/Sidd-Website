@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
-        url: '/images/Sidd1.webp',
+        url: '/og.png',
         width: 1200,
         height: 630,
         alt: 'Siddharth Sehgal - Cybersecurity Certifications',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Certifications | CompTIA Security+ & eJPT',
     description: 'View Siddharth Sehgal\'s professional certifications including CompTIA Security+ and eJPT (eLearnSecurity Junior Penetration Tester) certification.',
-    images: ['/images/Sidd1.webp'],
+    images: ['/og.png'],
     creator: '@SiddDevTech',
   },
 };

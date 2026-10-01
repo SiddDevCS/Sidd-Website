@@ -20,9 +20,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+  title: "Siddharth Sehgal | HBO-ICT student at HvA",
   description:
-    "Portfolio of Siddharth Sehgal — software developer, cybersecurity enthusiast, and incoming HvA student. Mobile apps, CTF write-ups, and security research.",
+    "Siddharth Sehgal is in the propedeuse year of the HBO-ICT bachelor at the Hogeschool van Amsterdam. He builds software and competes in hackathons and CTFs.",
   keywords: [
     "Siddharth Sehgal",
     "Software Development",
@@ -32,7 +32,8 @@ export const metadata: Metadata = {
     "AI Integration",
     "TripCraft",
     "StudieBuddie",
-    "Hack The Box",
+    "HvA",
+    "HBO-ICT",
     "CTF",
     "Next.js",
     "React",
@@ -53,17 +54,17 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   metadataBase: new URL("https://siddharthsehgal.com"),
   openGraph: {
-    title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+    title: "Siddharth Sehgal | HBO-ICT student at HvA",
     description:
-      "Portfolio of Siddharth Sehgal — software developer, cybersecurity enthusiast, and incoming HvA student.",
+      "Propedeuse year of the HBO-ICT bachelor at the Hogeschool van Amsterdam.",
     url: "https://siddharthsehgal.com",
     siteName: "Siddharth Sehgal",
     images: [
       {
-        url: "/images/Sidd1.webp",
+        url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Siddharth Sehgal — Software Developer and Cybersecurity Enthusiast",
+        alt: "Siddharth Sehgal",
       },
     ],
     locale: "en_US",
@@ -71,10 +72,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Siddharth Sehgal | Software Developer & Cybersecurity",
+    title: "Siddharth Sehgal | HBO-ICT student at HvA",
     description:
-      "Portfolio of Siddharth Sehgal — software developer, cybersecurity enthusiast, and incoming HvA student.",
-    images: ["/images/Sidd1.webp"],
+      "Propedeuse year of the HBO-ICT bachelor at the Hogeschool van Amsterdam.",
+    images: ["/og.png"],
     creator: "@SiddDevTech",
   },
   robots: {
@@ -103,16 +104,20 @@ export default function RootLayout({
     "@type": "Person",
     name: "Siddharth Sehgal",
     url: "https://siddharthsehgal.com",
-    image: "https://siddharthsehgal.com/images/Sidd1.webp",
+    image: "https://siddharthsehgal.com/og.png",
     sameAs: [
       "https://www.linkedin.com/in/siddsehgal/",
       "https://github.com/SiddDevCS",
       "https://www.youtube.com/@SiddDevTech",
       "https://medium.com/@siddnative",
     ],
-    jobTitle: "Software Developer & Cybersecurity Enthusiast",
+    jobTitle: "HBO-ICT Student",
     description:
-      "Software developer and cybersecurity enthusiast. Incoming HvA student. Builds AI-powered mobile apps and documents offensive security research.",
+      "HBO-ICT student at the Hogeschool van Amsterdam. Builds software and competes in hackathons and CTFs.",
+    affiliation: {
+      "@type": "CollegeOrUniversity",
+      name: "Hogeschool van Amsterdam",
+    },
   };
 
   const websiteSchema = {
@@ -123,11 +128,6 @@ export default function RootLayout({
     author: {
       "@type": "Person",
       name: "Siddharth Sehgal",
-    },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://siddharthsehgal.com/writeups?q={search_term_string}",
-      "query-input": "required name=search_term_string",
     },
   };
 

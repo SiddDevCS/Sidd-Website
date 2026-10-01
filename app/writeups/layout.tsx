@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: 'Write-ups | Siddharth Sehgal',
   description: 'Explore my Hack The Box write-ups and cybersecurity journey. Detailed walkthroughs of machines and challenges.',
+  robots: { index: false, follow: false },
   openGraph: {
     title: 'Write-ups | Siddharth Sehgal',
     description: 'Explore my Hack The Box write-ups and cybersecurity journey. Detailed walkthroughs of machines and challenges.',

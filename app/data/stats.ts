@@ -15,16 +15,8 @@ export const currentlyBuilding = {
   status: "Building",
   items: [
     {
-      label: "HvA Computer Science",
-      detail: "Incoming student — Amsterdam",
-    },
-    {
-      label: "BreachLock Internship",
-      detail: "Security automation & offensive security",
-    },
-    {
-      label: "Hack The Box Season 10",
-      detail: "Machines, write-ups, and skill depth",
+      label: "HBO-ICT, HvA",
+      detail: "Propedeuse year",
     },
   ],
 };

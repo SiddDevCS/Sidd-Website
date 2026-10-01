@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center animate-in-view">
           <Badge variant="accent" className="mb-8 delay-1">
-            Incoming HvA · Software & Security
+            HBO-ICT · HvA
           </Badge>
 
           <div className="relative mb-10 delay-2">

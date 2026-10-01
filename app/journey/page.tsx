@@ -5,18 +5,19 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'My Journey | From Game Dev to Cybersecurity',
-  description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, CTF competitions, and professional experience at BreachLock.',
+  description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, and CTF competitions.',
+  robots: { index: false, follow: false },
   alternates: {
     canonical: 'https://siddharthsehgal.com/journey',
   },
   openGraph: {
     title: 'My Journey | From Game Dev to Cybersecurity',
-    description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, CTF competitions, and professional experience at BreachLock.',
+    description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, and CTF competitions.',
     url: 'https://siddharthsehgal.com/journey',
     siteName: "Siddharth Sehgal's Portfolio",
     images: [
       {
-        url: '/images/Sidd1.webp',
+        url: '/og.png',
         width: 1200,
         height: 630,
         alt: 'Siddharth Sehgal - Journey Timeline',
@@ -28,8 +29,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'My Journey | From Game Dev to Cybersecurity',
-    description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, CTF competitions, and professional experience at BreachLock.',
-    images: ['/images/Sidd1.webp'],
+    description: 'Follow Siddharth Sehgal\'s journey from game development to mobile apps, cybersecurity certifications, and CTF competitions.',
+    images: ['/og.png'],
     creator: '@SiddDevTech',
   },
 };
@@ -330,7 +331,7 @@ export default function Journey() {
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
               <div>
                 <h2 className="text-3xl font-bold text-green-400 mb-2">Late 2025</h2>
-                <p className="text-lg text-neutral-400">Professional Growth & Internship</p>
+                <p className="text-lg text-neutral-400">Competitions and certifications</p>
               </div>
               <span className="text-sm text-neutral-500 mt-2 md:mt-0">September - December 2025</span>
             </div>
@@ -349,28 +350,6 @@ export default function Journey() {
                 </p>
               </div>
               
-              <p>
-                I also got an internship at <span className="text-green-400 font-medium">BreachLock</span>, starting in 
-                December 2025. I&apos;m currently doing that internship (it&apos;s January 2026).
-              </p>
-              
-              <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
-                <p className="text-green-300 font-medium mb-2">BreachLock Internship</p>
-                <p className="text-neutral-300 text-sm mb-2">
-                  Cybersecurity Intern at BreachLock Netherlands, contributing to development projects focused on building 
-                  security-driven automation solutions. Working at the intersection of software development and cybersecurity, 
-                  applying coding expertise and hands-on experience from hacking challenges to real-world environments.
-                </p>
-                <p className="text-neutral-300 text-sm">
-                  Transitioning into penetration testing within the NL team after completing development assignments, with 
-                  a focus on identifying and mitigating security vulnerabilities.
-                </p>
-              </div>
-              
-              <p>
-                I plan to keep doing this internship and then later move onto more cool stuff! The experience has been 
-                invaluable in bridging the gap between academic learning and real-world cybersecurity work.
-              </p>
             </div>
           </div>
 
@@ -402,12 +381,7 @@ export default function Journey() {
                 </p>
               </div>
               <p>
-                Continuing to grow, learn, and build. The journey is just getting started!
-              </p>
-              <p>
-                I&apos;m currently continuing my internship at BreachLock, working on exciting projects that combine my 
-                passion for software development and cybersecurity. I&apos;m always looking for new challenges, learning 
-                opportunities, and ways to contribute to the security community.
+                Continuing to grow, learn, and build.
               </p>
             </div>
           </div>

@@ -2,9 +2,9 @@ import Link from "next/link";
 import Container from "../ui/Container";
 
 const links = [
-  { name: "Write-ups", href: "/writeups" },
-  { name: "Portfolio", href: "/portfolio" },
-  { name: "Journey", href: "/journey" },
+  { name: "About", href: "/about" },
+  { name: "Work", href: "/portfolio" },
+  { name: "Achievements", href: "/achievements" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -16,7 +16,7 @@ export default function Footer() {
           <div>
             <p className="text-sm font-medium text-white mb-1">Siddharth Sehgal</p>
             <p className="text-sm text-neutral-500">
-              Software developer · Cybersecurity · Incoming HvA
+              HBO-ICT student at HvA
             </p>
           </div>
           <nav className="flex flex-wrap gap-6" aria-label="Footer">
@@ -31,12 +31,9 @@ export default function Footer() {
             ))}
           </nav>
         </div>
-        <div className="mt-10 pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div className="mt-10 pt-8 border-t border-white/[0.04]">
           <p className="text-xs text-neutral-600">
             © {new Date().getFullYear()} Siddharth Sehgal. All rights reserved.
-          </p>
-          <p className="text-mono-accent text-xs">
-            Built with Next.js · Deployed on Vercel
           </p>
         </div>
       </Container>

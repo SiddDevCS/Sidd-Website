@@ -9,10 +9,8 @@ import Container from "@/app/components/ui/Container";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Journey", path: "/journey" },
   { name: "Work", path: "/portfolio" },
-  { name: "Write-ups", path: "/writeups" },
-  { name: "CTF", path: "/ctfs" },
+  { name: "Achievements", path: "/achievements" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -46,16 +44,13 @@ export default function Navbar() {
     >
       <Container>
         <div className="flex justify-between items-center">
-          <Link
-            href="/"
-            className="group flex items-center gap-2 text-sm font-medium text-white"
-          >
+          <Link href="/" className="flex items-center gap-2 text-sm font-medium text-white tracking-tight">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-40" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
             </span>
-            <span className="hidden sm:inline tracking-tight">Siddharth Sehgal</span>
-            <span className="sm:hidden tracking-tight">SS</span>
+            <span className="hidden sm:inline">Siddharth Sehgal</span>
+            <span className="sm:hidden">SS</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1" aria-label="Main">
@@ -81,22 +76,14 @@ export default function Navbar() {
             })}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
-            <Link
-              href="/writeups"
-              className="text-sm text-neutral-500 hover:text-white transition-colors duration-300"
-            >
-              Research
-            </Link>
-            <Link
-              href="https://github.com/SiddDevCS"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm px-4 py-2 rounded-xl bg-white text-black font-medium hover:bg-neutral-200 transition-colors duration-300"
-            >
-              GitHub
-            </Link>
-          </div>
+          <a
+            href="https://github.com/SiddDevCS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:inline text-sm px-4 py-2 rounded-xl bg-blue-500 text-white font-medium hover:bg-blue-400 transition-colors shadow-[0_0_32px_-12px_rgba(59,130,246,0.9)]"
+          >
+            GitHub
+          </a>
 
           <button
             type="button"
@@ -149,14 +136,14 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Link
+            <a
               href="https://github.com/SiddDevCS"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-2 mt-2 mb-1 py-3 text-center text-sm font-medium rounded-xl bg-white text-black"
+              className="mx-2 mt-2 mb-1 py-3 text-center text-sm font-medium rounded-xl bg-blue-500 text-white hover:bg-blue-400"
             >
-              GitHub →
-            </Link>
+              GitHub
+            </a>
           </nav>
         </div>
       </Container>

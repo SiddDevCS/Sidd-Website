@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Siddharth Sehgal",
     images: [
       {
-        url: "/images/Sidd1.webp",
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "Siddharth Sehgal CTF Write-ups",
@@ -36,9 +36,10 @@ export const metadata: Metadata = {
     title: "Write-ups | Hack The Box & Bug Bounty CTF Solutions",
     description:
       "HTB machine and bug bounty CTF write-ups with structured metadata and search.",
-    images: ["/images/Sidd1.webp"],
+    images: ["/og.png"],
     creator: "@SiddDevTech",
   },
+  robots: { index: false, follow: false },
 };
 
 export default function WriteUpsPage() {

@@ -52,7 +52,7 @@ export async function GET() {
                 maxWidth: '700px',
               }}
             >
-              Software Developer & Cybersecurity Enthusiast
+              HBO-ICT student at HvA
             </p>
           </div>
         </div>
